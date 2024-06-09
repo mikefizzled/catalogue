@@ -10,33 +10,38 @@ if ($conn->connect_error) {
     die('Connection failed: ' . $conn->connect_error);
 }
 
-// Query to retrieve animal names and picture URLs
-$sql = 'SELECT animal_id, common_name, thumbnail FROM animals ORDER BY common_name';
-$result = $conn->query($sql);
+$family = $_GET["family_id"];
+$current_page = isset($_GET['page']) ? intval($_GET['page']) : 1;
 
+$cards_per_page = 12;
+
+
+if ($family) {
+    // Binding to avoid potential sql injections using the GET
+    $stmt = $conn->prepare("SELECT animal_id, common_name, thumbnail FROM animals WHERE family_id = ? ORDER BY common_name");
+    $stmt->bind_param("s", $family);
+} else {
+// Query to retrieve animal names and picture URLs
+$stmt = $conn->prepare("SELECT animal_id, common_name, thumbnail FROM animals ORDER BY common_name");
+}
+$stmt->execute();
+$result = $stmt->get_result();
 $data = array();
 
 if ($result->num_rows > 0) {
-  // output data of each row
-  while($row = $result->fetch_assoc()) {
-    $data[] = $row;
-  }
+    while ($row = $result->fetch_assoc()) {
+        $data[] = $row;
+    }
 } else {
-  echo "0 results";
+    // Handle no results (e.g., log an error)
+    // You can customize the response message here
+    $data[] = array("message" => "No results found");
 }
 
-echo json_encode($data);
-/*
-// Display animals in Bootstrap divs
-echo '<div class="container">';
-while ($row = $result->fetch_assoc()) {
-    echo '<div class="animal-card d-flex">';
-    echo '<h3>' . $row['common_name'] . '</h3>';
-    echo '<img class="img-fluid thumbnail" src="thumbnails/' . $row['thumbnail'] . '" alt="' . $row['common_name'] . '">';
-    echo '</div>';
-}
-echo '</div>';
-*/
-// Close the database connection
 $conn->close();
+
+echo json_encode($data);
+
+// Close the database connection
+
 ?>

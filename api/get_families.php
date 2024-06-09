@@ -10,11 +10,22 @@ if ($conn->connect_error) {
     die('Connection failed: ' . $conn->connect_error);
 }
 
-                                    
+$class = $_GET["class_id"];
+
+
+if ($class) {
+    $sql = "SELECT DISTINCT family.family_id, family.family_name, family.common_name
+    FROM animals
+    INNER JOIN family ON animals.family_id = family.family_id
+    WHERE animals.class_id = '$class'
+    ORDER BY family.family_name;"; 
+}
+else{
 $sql = 'SELECT DISTINCT family.family_id, family.family_name, family.common_name
 FROM animals
 INNER JOIN family ON animals.family_id = family.family_id
 ORDER BY family.family_name;';
+}
 $result = $conn->query($sql);
 
 $data = array();
