@@ -3,19 +3,17 @@
     width: 100 /* Set min-height to your preference */
   }
   #front-page-carousel{
-    position: relative;
-    top: -10vh;
+
   }
   .navbar {
     height: 10vh;
-  /*position: absolute;  this was for the navbar sitting on top of the content*/
-  background-color:rgba(33, 37, 41, 0.9);
-  backdrop-filter: blur(10px);
-  width: 100%;
-  font-family: "Playfair Display", serif;
-  font-size: larger;
-  font-weight: 400;
-  z-index: 10; /* Set z-index to a high number to make sure it's on top */
+    background-color:rgb(33, 37, 41);
+    backdrop-filter: blur(10px);
+    width: 100%;
+    font-family: "Playfair Display", serif;
+    font-size: larger;
+    font-weight: 400;
+    z-index: 10; /* Set z-index to a high number to make sure it's on top */
 }
 .navbar-brand{
     font-weight:500;
@@ -39,7 +37,7 @@ a {
     color: white;
 }
 .animal-card {
-    width: 16rem;
+    width: 10rem;
     margin: 0.5rem;
     position: relative;
     text-align: center;
@@ -51,6 +49,30 @@ a {
     margin-top: 0.5rem !important;
     margin-bottom: 0.5rem !important;
 }
+.brand-icon {
+    justify-content: center;
+    display: none; /* Hide on big screens */
+    width: 170px; /* Adjust as needed */
+    height: 60px; /* Adjust as needed */
+}
+@media (max-width: 1000px) {
+    .brand-icon {
+        display: block;
+    }
+    .brand{
+        display: none;
+    }
+    .nav-item{
+        padding: 0.5rem;
+        text-align: center;
+    }
+}
+.navbar-coll{
+    background-color:rgba(33, 37, 41, 1);
+    width: 100%;
+}
+
+
 
 .catalogue-card{
     margin: 0.5rem;
@@ -67,7 +89,9 @@ a {
 }
 .option-a{
     width:fit-content;
-    margin-top: 1rem;
+    padding: 0.5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .animal-card:hover{
     transform: scale(1.05);
