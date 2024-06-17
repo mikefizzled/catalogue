@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" sizes="32x32" href="mr-photography.png">
+    <link rel="stylesheet" href="navbar.css">
     <script src="navbar.js"></script>
     
 </head>
@@ -67,7 +68,7 @@ window.onload = function () {
               let option = document.createElement("option");
               option.classList.add('option-a');
               option.value = classes.class_id; // Set the value to the family_id
-              option.textContent = `${classes.class_name}`; // Display the desired text
+              option.textContent = `${classes.class_common_name}`; // Display the desired text
               select.appendChild(option);
             });
           });
@@ -101,7 +102,7 @@ window.onload = function () {
             data.forEach(animal => {
               const col = document.createElement('a');
               col.classList.add('streched-link','a-card');
-              col.href = `animal.html&${animal.animal_id}`;
+              col.href = `animal.html?animal_id=${animal.animal_id}`;
               col.innerHTML = `
               <div class="card animal-card">
                 <img src="thumbnails/${animal.thumbnail}" alt="${animal.common_name}"class="card-img-top">

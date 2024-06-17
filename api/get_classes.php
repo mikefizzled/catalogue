@@ -11,10 +11,10 @@ if ($conn->connect_error) {
 }
 
                                     
-$sql = 'SELECT DISTINCT class.class_id, class.class_name
+$sql = 'SELECT DISTINCT class.class_id, class.class_common_name
 FROM animals
 INNER JOIN class ON animals.class_id = class.class_id
-ORDER BY class.class_name;';
+ORDER BY class.class_common_name;';
 $result = $conn->query($sql);
 
 $data = array();

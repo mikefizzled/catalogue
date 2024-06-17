@@ -1,0 +1,51 @@
+.detail-card {
+    background-color: #343a40;
+    color:white;
+}
+
+.detail-table{
+    font-family: "Playfair Display", serif;
+    line-height: 2;
+}
+.no-border th {
+    border: none;
+
+}
+i{
+    font-size: medium;
+    font-weight: 200;
+}
+.container{
+    padding-top: 1rem;
+}
+
+.centered{
+    text-align: center;
+}
+.detail-table > tbody > tr > td,
+.detail-table > tbody > tr > th,
+.detail-table > thead > tr > th,
+.detail-table > thead > tr > td {
+    background-color: #343a40;
+    border-bottom-width: 1px;
+    color: white;
+    padding: .5rem 0.25rem;
+}
+
+.card-body .table tbody {
+    display: block; /* Enable scrolling on tbody */
+    overflow-y: auto; /* Add vertical scrollbar */
+    width: 100%; /* Full width tbody (optional) */
+}
+
+.card-body .table thead,
+.card-body .table tbody tr {
+    display: table; /* Make rows behave like rows */
+    width: 100%; /* Set a width */
+    table-layout: fixed; /* Ensure consistent cell width */
+}
+.return-button{
+    background-color: #343a40;
+    color:white;
+    font-family: "Playfair Display", serif;
+}

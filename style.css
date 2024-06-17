@@ -1,42 +1,21 @@
-
-  .carousel img {
-    width: 100 /* Set min-height to your preference */
+.carousel img {
+    width: 100%; /* Set min-height to your preference */
   }
-  #front-page-carousel{
-
-  }
-  .navbar {
-    height: 10vh;
-    background-color:rgb(33, 37, 41);
-    backdrop-filter: blur(10px);
-    width: 100%;
-    font-family: "Playfair Display", serif;
-    font-size: larger;
-    font-weight: 400;
-    z-index: 10; /* Set z-index to a high number to make sure it's on top */
-}
-.navbar-brand{
-    font-weight:500;
-    text-align: center;
-    padding-bottom: 50%;
-
-}
-
-.thumbnail{
+  .thumbnail {
     max-width: 128px;
     max-height: 128px;
-}
-.li {
+  }
+  .li {
     align-content: center;
-}
-a {
+  }
+  a {
     position: relative;
-}
-#about{
+  }
+  #about {
     padding-top: 1%;
     color: white;
-}
-.animal-card {
+  }
+  .animal-card {
     width: 10rem;
     margin: 0.5rem;
     position: relative;
@@ -44,37 +23,14 @@ a {
     color: white;
     background-color: #343a40;
     transition: transform 0.3s ease;
-}
-.p-card{
+  }
+  .p-card {
     margin-top: 0.5rem !important;
     margin-bottom: 0.5rem !important;
-}
-.brand-icon {
-    justify-content: center;
-    display: none; /* Hide on big screens */
-    width: 170px; /* Adjust as needed */
-    height: 60px; /* Adjust as needed */
-}
-@media (max-width: 1000px) {
-    .brand-icon {
-        display: block;
-    }
-    .brand{
-        display: none;
-    }
-    .nav-item{
-        padding: 0.5rem;
-        text-align: center;
-    }
-}
-.navbar-coll{
-    background-color:rgba(33, 37, 41, 1);
-    width: 100%;
-}
-
-
-
-.catalogue-card{
+  }
+ 
+  
+  .catalogue-card {
     margin: 0.5rem;
     padding: 1rem 2rem 1rem 2rem;
     text-align: center;
@@ -82,93 +38,77 @@ a {
     background-color: #343a40;
     flex-wrap: wrap;
     justify-content: center;
-    border:#495057;
-    border-style:solid;
+    border: #495057;
+    border-style: solid;
     border-width: 1px;
     border-radius: 1rem;
-}
-.option-a{
-    width:fit-content;
+  }
+  .option-a {
+    width: fit-content;
     padding: 0.5rem;
     overflow: hidden;
     text-overflow: ellipsis;
-}
-.animal-card:hover{
+  }
+  .animal-card:hover {
     transform: scale(1.05);
-}
-
-.container{
+  }
+  
+  .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
-.card-body{
+  }
+  .card-body {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.a-card{
-text-decoration: none;
-}
-.left{
+    min-width: fit-content;
+  }
+  .a-card {
+    text-decoration: none;
+  }
+  .left {
     text-align: left;
-}
-.right-p {
+  }
+  .right-p {
     text-align: right;
     font-weight: 100;
-}
-.right-h{
+  }
+  .right-h {
     text-align: right;
-}
-.right-li{
+  }
+  .right-li {
     direction: rtl;
-}
-@media (max-width: 750px) {
+  }
+  @media (max-width: 750px) {
     .right-h {
-        text-align: center;
+      text-align: center;
     }
-    .left{
-        text-align: center;
+    .left {
+      text-align: center;
     }
-    .right-p{
-        text-align: left;
+    .right-p {
+      text-align: left;
     }
-.right-li{
-    direction: ltr;
-}
-}
-.row{
-   margin-bottom: 5px;
-}
-.a-about{
+    .right-li {
+      direction: ltr;
+    }
+  }
+  .row {
+    margin-bottom: 5px;
+  }
+  .a-about {
     color: cornflowerblue;
-}
-.a-about:hover{
+  }
+  .a-about:hover {
     color: gainsboro;
-}
-p, h1, h2, h3, h4, li, select, option, label{ 
+  }
+  p, h1, h2, h3, h4, li, select, option, label {
     font-family: "Playfair Display", serif;
-}
+  }
+  
 
-
-
-.nav-a::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 1px;
-    left: 0;
-    bottom: .1em;
-    background-color: currentColor;
-    transform: scalex(0);
-    transform-origin: right;
-    transition: transform .6s cubic-bezier(.19,1,.22,1);
-}
-
-.nav-a:hover::after {
-    transform: scalex(1);
-    transform-origin: left;
-}
-body{
-    background-color:#495057;
-}
+  body {
+    background-color: #495057;
+  }
+  
