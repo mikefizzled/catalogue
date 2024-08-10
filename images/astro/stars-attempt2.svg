@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="4494" height="2528" viewBox="0 0 1189.0374 668.86661" version="1.1" id="svg1" xml:space="preserve" inkscape:version="1.3 (0e150ed6c4, 2023-07-21)" sodipodi:docname="stars-attempt2.svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<sodipodi:namedview id="namedview1" pagecolor="#ffffff" bordercolor="#000000" borderopacity="0.25" inkscape:showpageshadow="2" inkscape:pageopacity="0.0" inkscape:pagecheckerboard="0" inkscape:deskcolor="#d1d1d1" inkscape:document-units="px" showgrid="false" inkscape:zoom="0.25" inkscape:cx="2344" inkscape:cy="1210" inkscape:window-width="1920" inkscape:window-height="1009" inkscape:window-x="-8" inkscape:window-y="-8" inkscape:window-maximized="1" inkscape:current-layer="svg1" showborder="true">
+		<inkscape:grid id="grid18" units="px" originx="0" originy="0" spacingx="0.26458331" spacingy="0.26458331" empcolor="#0099e5" empopacity="0.30196078" color="#0099e5" opacity="0.14901961" empspacing="5" dotted="false" gridanglex="30" gridanglez="30" visible="false" />
+	</sodipodi:namedview>
+	<defs id="defs1">
+		<inkscape:path-effect effect="bspline" id="path-effect67" is_visible="true" lpeversion="1.3" weight="33.333333" steps="2" helper_size="0" apply_no_weight="true" apply_with_weight="true" only_selected="false" uniform="false" />
+		<inkscape:path-effect effect="bspline" id="path-effect57" is_visible="true" lpeversion="1.3" weight="33.333333" steps="2" helper_size="0" apply_no_weight="true" apply_with_weight="true" only_selected="false" uniform="false" />
+		<inkscape:path-effect effect="bspline" id="path-effect54" is_visible="true" lpeversion="1.3" weight="33.333333" steps="2" helper_size="0" apply_no_weight="true" apply_with_weight="true" only_selected="false" uniform="false" />
+		<inkscape:path-effect effect="bspline" id="path-effect52" is_visible="true" lpeversion="1.3" weight="33.333333" steps="2" helper_size="0" apply_no_weight="true" apply_with_weight="true" only_selected="false" uniform="false" />
+		<inkscape:path-effect effect="bspline" id="path-effect51" is_visible="true" lpeversion="1.3" weight="33.333333" steps="2" helper_size="0" apply_no_weight="true" apply_with_weight="true" only_selected="false" uniform="false" />
+		<inkscape:path-effect effect="bspline" id="path-effect50" is_visible="true" lpeversion="1.3" weight="33.333333" steps="2" helper_size="0" apply_no_weight="true" apply_with_weight="true" only_selected="false" uniform="false" />
+		<inkscape:path-effect effect="bspline" id="path-effect47" is_visible="true" lpeversion="1.3" weight="33.333333" steps="2" helper_size="0" apply_no_weight="true" apply_with_weight="true" only_selected="false" uniform="false" />
+		<inkscape:path-effect effect="bspline" id="path-effect40" is_visible="true" lpeversion="1.3" weight="33.333333" steps="2" helper_size="0" apply_no_weight="true" apply_with_weight="true" only_selected="false" uniform="false" />
+	</defs>
+	<g inkscape:groupmode="layer" id="constellations" inkscape:label="Constellations" style="display:inline;fill:#cccccc">
+		<g id="Orion">
+			<path id="path30" style="opacity:0.70073;fill:none;fill-opacity:1;stroke:#369eff;stroke-width:0.79375;stroke-dasharray:none;stroke-opacity:1" d="m 730.4175,297.35988 -146.74672,15.37759 m 124.83395,-69.24159 18.52176,20.57975 3.73608,33.24986 -5.32632,23.20414 -10.47696,53.36704 -19.64431,12.81558 M 406.10231,173.269 c -5.85391,3.35138 -17.56172,10.05416 -17.56172,10.05416 m 32.91924,-97.655027 c -10.16515,35.359757 -32.87669,97.678747 -32.87669,97.678747 l 40.92564,77.59502 m 31.33735,37.72175 C 450.38474,286.04295 429.462,260.80158 429.462,260.80158 L 406.16946,173.24409 458.3672,74.461284 M 522.39829,450.55625 C 501.90023,399.94236 460.90413,298.71456 460.90413,298.71456 l 80.43332,-45.11146 42.33333,59.39896 -26.00629,110.3328 m -60.94412,153.83363 133.58129,-25.44405 -72.59039,-128.34283 -17.21215,14.78002 -18.14761,12.34784 z" sodipodi:nodetypes="cccccccccccccccccccccccccccc" />
+			<text xml:space="preserve" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.1111px;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:1.32292px;opacity:0.70073;fill:#00ffff;fill-opacity:1;stroke:#369eff;stroke-width:0.264583;stroke-dasharray:none;stroke-opacity:1" x="505.06754" y="325.02893" id="text32">
+				<tspan sodipodi:role="line" id="tspan32" style="font-size:14.1111px;letter-spacing:1.32292px;fill:#00ffff;stroke:none;stroke-width:0.264583;stroke-dasharray:none" x="505.06754" y="325.02893">ORION</tspan>
+			</text>
+		</g>
+		<g id="g45" inkscape:label="Taurus">
+			<path id="path40" style="opacity:0.70073;fill:none;fill-opacity:1;stroke:#369eff;stroke-width:0.79375;stroke-dasharray:none;stroke-opacity:1" inkscape:path-effect="#path-effect40" inkscape:original-d="m 859.5797,134.13052 c 30.16775,16.73286 90.50325,50.19857 90.50325,50.19857 L 1134.4009,233.0979 M 844.54993,99.8802 C 872.89106,66.594595 929.57335,0.02338608 929.57335,0.02338608 M 818.13866,71.654955 C 797.69923,49.625264 756.82037,5.5658875 756.82037,5.5658875 L 736.05352,0.07015824 M 787.36686,125.24712 C 700.41817,102.45989 613.46948,79.672649 526.52079,56.885412 m 291.5708,15.081248 -30.69166,53.18125 32.80833,7.54062 39.6875,1.5875 -15.08125,-34.39583 -12.17083,-6.085417 z" d="m 859.5797,134.13052 c 30.16775,16.73286 60.3355,33.46571 90.50325,50.19857 0,0 184.31795,48.76881 184.31795,48.76881 M 844.54993,99.8802 C 872.89107,66.5946 901.23221,33.308991 929.57335,0.02338608 M 818.13866,71.654955 C 797.69923,49.625265 777.2598,27.595577 756.82037,5.5658875 c 0,0 -20.76685,-5.49572926 -20.76685,-5.49572926 M 787.36686,125.24712 C 700.41817,102.45988 613.46948,79.672648 526.52079,56.885412 m 291.5708,15.081248 c 0,0 -30.69166,53.18125 -30.69166,53.18125 0,0 32.80833,7.54062 32.80833,7.54062 0,0 39.6875,1.5875 39.6875,1.5875 0,0 -15.08125,-34.39583 -15.08125,-34.39583 0,0 -12.17083,-6.085417 -12.17083,-6.085417 z" sodipodi:nodetypes="ccccccccccccccccc" />
+			<text xml:space="preserve" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.1111px;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:1.32292px;opacity:0.70073;fill:none;fill-opacity:1;stroke:#369eff;stroke-width:0.79375;stroke-dasharray:none;stroke-opacity:1" x="864.39368" y="114.29999" id="text42">
+				<tspan sodipodi:role="line" id="tspan42" style="letter-spacing:1.32292px;fill:#00ffff;stroke:none;stroke-width:0.79375" x="864.39368" y="114.29999">TAURUS</tspan>
+			</text>
+		</g>
+		<g id="g47" inkscape:label="Eridanus">
+			<path style="opacity:0.70073;fill:none;fill-opacity:1;stroke:#369eff;stroke-width:0.79375;stroke-dasharray:none;stroke-opacity:1" d="m 781.31451,656.16661 c 0,0 -129.11665,-96.04374 -129.11665,-96.04374 0,0 5.35303,-60.1953 5.35303,-60.1953 0,0 62.51259,5.95572 62.51259,5.95572 0,0 31.00392,-36.57139 31.00392,-36.57139 0,0 39.4757,1.49669 39.4757,1.49669 0,0 242.1863,118.14649 242.1863,118.14649 0,0 52.1977,-2.61924 52.1977,-2.61924 0,0 92.6009,-6.23693 92.6009,-6.23693 0,0 11.5094,1.52135 11.5094,1.52135" id="path47" inkscape:path-effect="#path-effect47" inkscape:original-d="m 781.31451,656.16661 -129.11665,-96.04374 5.35303,-60.1953 62.51259,5.95572 31.00392,-36.57139 39.4757,1.49669 c 0,0 242.1863,118.14649 242.1863,118.14649 0,0 52.1977,-2.61924 52.1977,-2.61924 0,0 92.6009,-6.23693 92.6009,-6.23693 0,0 11.5094,1.52135 11.5094,1.52135" sodipodi:nodetypes="cccccc" />
+			<text xml:space="preserve" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.1111px;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:1.32292px;display:inline;opacity:0.70073;fill:#00ffff;fill-opacity:1;stroke:#369eff;stroke-width:0.264583;stroke-dasharray:none;stroke-opacity:1" x="741.23151" y="513.97516" id="text32-8">
+				<tspan sodipodi:role="line" id="tspan32-4" style="font-size:14.1111px;letter-spacing:1.32292px;fill:#00ffff;stroke:none;stroke-width:0.264583;stroke-dasharray:none" x="741.23151" y="513.97516" dx="0">ERIDANUS</tspan>
+			</text>
+		</g>
+		<g id="g48" inkscape:label="Lepus">
+			<text xml:space="preserve" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.1111px;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:1.32292px;display:inline;opacity:0.70073;fill:#00ffff;fill-opacity:1;stroke:#369eff;stroke-width:0.264583;stroke-dasharray:none;stroke-opacity:1" x="541.01776" y="662.1142" id="text32-8-6">
+				<tspan sodipodi:role="line" id="tspan32-4-1" style="font-size:14.1111px;letter-spacing:1.32292px;fill:#00ffff;stroke:none;stroke-width:0.264583;stroke-dasharray:none" x="541.01776" y="662.1142">LEPUS</tspan>
+			</text>
+			<path id="path52" style="opacity:0.70073;fill:none;fill-opacity:1;stroke:#369eff;stroke-width:0.79375;stroke-dasharray:none;stroke-opacity:1" inkscape:path-effect="#path-effect52" inkscape:original-d="m 424.7885,665.89005 38.49688,-14.08907 37.9677,9.85573 7.60677,8.26823 m 131.43176,-57.81145 c -1.23473,5.90902 -3.70417,17.72708 -3.70417,17.72708 0,0 -0.13229,62.44166 -0.13229,62.44166 0,0 -25.79687,-58.73749 -25.79687,-58.73749 0,0 -1.5875,-14.15521 -1.5875,-14.15521" d="m 424.7885,665.89005 c 0,0 38.49688,-14.08907 38.49688,-14.08907 0,0 37.9677,9.85573 37.9677,9.85573 0,0 7.60677,8.26823 7.60677,8.26823 m 131.43176,-57.81145 c -1.23472,5.90902 -2.46945,11.81805 -3.70417,17.72708 0,0 -0.13229,62.44166 -0.13229,62.44166 0,0 -25.79687,-58.73749 -25.79687,-58.73749 0,0 -1.5875,-14.15521 -1.5875,-14.15521" />
+		</g>
+		<g id="g53" style="display:inline;fill:#cccccc" inkscape:label="Monoceros">
+			<text xml:space="preserve" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.1111px;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:1.32292px;display:inline;opacity:0.70073;fill:#00ffff;fill-opacity:1;stroke:#369eff;stroke-width:0.264583;stroke-dasharray:none;stroke-opacity:1" x="187.05743" y="439.23425" id="text32-8-6-3-4">
+				<tspan sodipodi:role="line" style="font-size:14.1111px;letter-spacing:1.32292px;fill:#00ffff;stroke:none;stroke-width:0.264583;stroke-dasharray:none" x="187.05743" y="439.23425" id="tspan52-9">MONOCEROS</tspan>
+			</text>
+			<path id="path50" style="display:inline;opacity:0.70073;fill:none;fill-opacity:1;stroke:#369eff;stroke-width:0.79375;stroke-dasharray:none;stroke-opacity:1" inkscape:path-effect="#path-effect50" inkscape:original-d="M 141.43902,434.98113 C 93.294874,446.01936 45.150729,457.05759 -2.9934183,468.09582 M 385.2333,524.53641 c -18.96181,4.85069 -56.88541,14.55208 -56.88541,14.55208 L 141.27281,434.92543 343.2307,346.60414 405.42111,380.16415 M 15.154181,602.23837 C 9.8533362,591.13778 -0.74835508,568.93658 -0.74835508,568.93658" d="M 141.43902,434.98113 C 93.294874,446.01936 45.150729,457.05759 -2.9934183,468.09582 M 385.2333,524.53641 c -18.96181,4.85069 -37.92361,9.70139 -56.88541,14.55208 0,0 -187.07508,-104.16306 -187.07508,-104.16306 0,0 201.95789,-88.32129 201.95789,-88.32129 0,0 62.19041,33.56001 62.19041,33.56001 M 15.154181,602.23837 C 9.8533383,591.13778 4.5524903,580.03718 -0.74835508,568.93658" />
+		</g>
+		<g id="g54" style="display:inline;fill:#cccccc" inkscape:label="Canis Major">
+			<text xml:space="preserve" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.1111px;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:1.32292px;display:inline;opacity:0.70073;fill:#00ffff;fill-opacity:1;stroke:#369eff;stroke-width:0.264583;stroke-dasharray:none;stroke-opacity:1" x="171.89136" y="627.46936" id="text32-8-6-3">
+				<tspan sodipodi:role="line" style="font-size:14.1111px;letter-spacing:1.32292px;fill:#00ffff;stroke:none;stroke-width:0.264583;stroke-dasharray:none" x="171.89136" y="627.46936" id="tspan52">CANIS MAJOR</tspan>
+			</text>
+			<path style="display:inline;opacity:0.70073;fill:none;fill-opacity:1;stroke:#369eff;stroke-width:0.79375;stroke-dasharray:none;stroke-opacity:1" d="m 226.48331,628.12078 c 0,0 -37.30624,66.67499 -37.30624,66.67499 0,0 32.45523,10.60993 32.45523,10.60993 z" id="path51" inkscape:path-effect="#path-effect51" inkscape:original-d="m 226.48331,628.12078 -37.30624,66.67499 32.45523,10.60993 z" sodipodi:nodetypes="cccc" />
+		</g>
+		<g id="g1" transform="translate(-132.423,-298.97492)" inkscape:label="Canis Minor">
+			<text xml:space="preserve" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.1111px;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:1.32292px;display:inline;opacity:0.70073;fill:#00ffff;fill-opacity:1;stroke:#369eff;stroke-width:0.264583;stroke-dasharray:none;stroke-opacity:1" x="171.89136" y="627.46936" id="text32-8-6-3-1">
+				<tspan sodipodi:role="line" style="font-size:14.1111px;letter-spacing:1.32292px;fill:#00ffff;stroke:none;stroke-width:0.264583;stroke-dasharray:none" x="171.89136" y="627.46936" id="tspan52-1">CANIS MINOR</tspan>
+			</text>
+			<path style="display:inline;opacity:0.70073;fill:none;fill-opacity:1;stroke:#369eff;stroke-width:0.79375;stroke-dasharray:none;stroke-opacity:1" d="M 10.851142,338.63047 C 29.435285,320.17105 48.01942,301.71164 66.603559,283.25223" id="path54" inkscape:path-effect="#path-effect54" inkscape:original-d="m 10.851142,338.63047 c 18.58414,-18.45942 55.752417,-55.37824 55.752417,-55.37824" transform="translate(132.423,298.97492)" />
+		</g>
+		<g id="g57" inkscape:label="Gemini">
+			<text xml:space="preserve" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.1111px;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:1.32292px;display:inline;opacity:0.70073;fill:#00ffff;fill-opacity:1;stroke:#369eff;stroke-width:0.264583;stroke-dasharray:none;stroke-opacity:1" x="152.40135" y="30.052259" id="text32-8-6-3-1-1">
+				<tspan sodipodi:role="line" style="font-size:14.1111px;letter-spacing:1.32292px;fill:#00ffff;stroke:none;stroke-width:0.264583;stroke-dasharray:none" x="152.40135" y="30.052259" id="tspan52-1-1">GEMINI</tspan>
+			</text>
+			<path id="path57" style="opacity:0.70073;fill:none;fill-opacity:1;stroke:#369eff;stroke-width:0.79375;stroke-dasharray:none;stroke-opacity:1" inkscape:path-effect="#path-effect57" inkscape:original-d="m 315.64789,75.14166 c -21.0288,-32.065638 -63.0864,-96.196922 -63.0864,-96.196922 l 87.16348,53.863592 33.86666,0.529167 44.18542,-14.287499 M 92.339575,27.384373 C 86.518742,17.065623 74.877077,-3.5718747 74.877077,-3.5718747 M 249.23748,205.31665 c -48.50694,-23.98889 -145.52082,-71.96666 -145.52082,-71.96666 0,0 -11.377085,-106.097909 -11.377085,-106.097909 0,0 73.024995,33.866664 73.024995,33.866664 0,0 115.62291,82.814575 115.62291,82.814575" d="m 315.64789,75.14166 c -21.0288,-32.065639 -42.0576,-64.131281 -63.0864,-96.196922 0,0 87.16348,53.863592 87.16348,53.863592 0,0 33.86666,0.529167 33.86666,0.529167 0,0 44.18542,-14.287499 44.18542,-14.287499 M 92.339575,27.384373 C 86.518742,17.065623 80.69791,6.7468745 74.877077,-3.5718747 M 249.23748,205.31665 c -48.50694,-23.98889 -97.01388,-47.97777 -145.52082,-71.96666 0,0 -11.377085,-106.097909 -11.377085,-106.097909 0,0 73.024995,33.866664 73.024995,33.866664 0,0 115.62291,82.814575 115.62291,82.814575" />
+		</g>
+	</g>
+	<g inkscape:groupmode="layer" id="planets" inkscape:label="Planets / Minor Planet" style="display:inline">
+		<g id="g62" inkscape:label="Uranus" transform="translate(0.26458328,1.0583332)">
+			<text xml:space="preserve" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.1111px;font-family:Sans;-inkscape-font-specification:Sans;display:inline;opacity:0.70073;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.79375;stroke-dasharray:none;stroke-opacity:1" x="1134.9886" y="33.70892" id="text45" inkscape:label="Uranus">
+				<tspan sodipodi:role="line" id="tspan45" style="font-size:14.1111px;fill:#ffffff;stroke:none;stroke-width:0.79375" x="1134.9886" y="33.70892">Uranus</tspan>
+			</text>
+			<ellipse style="opacity:0.70073;fill:none;fill-opacity:1;stroke:#b3b3b3;stroke-width:1.15714;stroke-dasharray:none;stroke-opacity:1" id="path62" cx="1170.1693" cy="42.960228" rx="4.893085" ry="4.4253631" />
+		</g>
+		<g id="g63" transform="translate(32.01458,-50.40312)" inkscape:label="Vesta" style="display:inline">
+			<text xml:space="preserve" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.1111px;font-family:Sans;-inkscape-font-specification:Sans;display:inline;opacity:0.70073;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.79375;stroke-dasharray:none;stroke-opacity:1" x="281.60339" y="137.29187" id="text45-5" inkscape:label="Vesta">
+				<tspan sodipodi:role="line" id="tspan45-9" style="font-size:14.1111px;fill:#ffffff;stroke:none;stroke-width:0.79375" x="281.60339" y="137.29187">Vesta</tspan>
+			</text>
+			<ellipse style="opacity:0.70073;fill:none;fill-opacity:1;stroke:#b3b3b3;stroke-width:1.15714;stroke-dasharray:none;stroke-opacity:1" id="path62-1" cx="302.05045" cy="147.27274" rx="4.893085" ry="4.4253631" />
+		</g>
+		<g id="g67" style="display:inline" transform="translate(-8.3343743,1.7197915)" inkscape:label="Melpomene">
+			<text xml:space="preserve" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.1111px;font-family:Sans;-inkscape-font-specification:Sans;display:inline;opacity:0.70073;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.79375;stroke-dasharray:none;stroke-opacity:1" x="1107.3138" y="414.07812" id="text45-8" inkscape:label="Uranus">
+				<tspan sodipodi:role="line" id="tspan45-7" style="font-size:14.1111px;fill:#ffffff;stroke:none;stroke-width:0.79375" x="1107.3138" y="414.07812">Melpomene</tspan>
+			</text>
+			<ellipse style="display:inline;opacity:0.70073;fill:none;fill-opacity:1;stroke:#b3b3b3;stroke-width:1.15714;stroke-dasharray:none;stroke-opacity:1" id="path62-0" cx="1155.3317" cy="422.17477" rx="4.893085" ry="4.4253631" />
+		</g>
+	</g>
+	<g inkscape:groupmode="layer" id="nebulae" inkscape:label="Nebulae" style="display:inline">
+		<g id="Rosette Nebula" transform="translate(-1.73057,-1.8241144)">
+			<a xlink:href="https://en.wikipedia.org/wiki/Rosette_Nebula" target="_blank" pointer-events="visible">
+				<ellipse style="display:inline;opacity:0.70073;fill:none;fill-opacity:0;stroke:#ffccaa;stroke-width:1.07011;stroke-dasharray:none;stroke-opacity:1" id="Rosette Nebula circle" cx="312.20419" cy="340.59485" rx="8.0469484" ry="8.0937195" />
+			</a>
+			<text xml:space="preserve" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:-0.264583px;display:inline;fill:#73d3ff;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-opacity:1" x="271.09741" y="328.85013" id="text7-3-2-0-7" inkscape:label="Rosette Nebula text">
+				<tspan sodipodi:role="line" id="tspan7-9-7-1-4" style="font-size:11.2889px;letter-spacing:-0.264583px;fill:#ffe290;fill-opacity:1;stroke-width:0.264583" x="271.09741" y="328.85013">Rosette Nebula</tspan>
+			</text>
+		</g>
+		<g id="Cone Nebula">
+			<text xml:space="preserve" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:-0.264583px;display:inline;fill:#73d3ff;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-opacity:1" x="279.36691" y="254.87642" id="text7-3-2-0-7-0" inkscape:label="Cone">
+				<tspan sodipodi:role="line" id="tspan7-9-7-1-4-7" style="font-size:11.2889px;letter-spacing:-0.264583px;fill:#ffe290;fill-opacity:1;stroke-width:0.264583" x="279.36691" y="254.87642">Cone Nebula &amp;</tspan>
+				<tspan sodipodi:role="line" style="font-size:11.2889px;letter-spacing:-0.264583px;fill:#ffe290;fill-opacity:1;stroke-width:0.264583" x="279.36691" y="268.98755" id="tspan60">Christmas Tree Cluster</tspan>
+			</text>
+      <a xlink:href="https://en.wikipedia.org/wiki/Cone_Nebula" target="_blank" pointer-events="all">
+			  <ellipse style="display:inline;opacity:0.70073fill:white;fill-opacity:0;stroke:#ffccaa;stroke-width:0.589816;stroke-dasharray:none;stroke-opacity:1" id="path58-5" cx="268.41748" cy="257.94705" rx="4.9662719" ry="3.9840553" />
+      </a>
+    </g>
+		<g id="g64" style="display:inline" transform="translate(-1.6378325,-5.7701662)" inkscape:label="Orion">
+			<ellipse style="display:inline;opacity:0.70073;fill:none;fill-opacity:1;stroke:#ffccaa;stroke-width:1.56061;stroke-dasharray:none;stroke-opacity:1" id="path58-3" cx="547.16486" cy="511.42157" rx="10.182946" ry="13.603157" />
+			<text xml:space="preserve" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:-0.264583px;display:inline;fill:#73d3ff;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-opacity:1" x="510.63361" y="494.9899" id="text7-3-2-0-7-9" inkscape:label="Orion">
+				<tspan sodipodi:role="line" id="tspan7-9-7-1-4-0" style="font-size:11.2889px;letter-spacing:-0.264583px;fill:#ffe290;fill-opacity:1;stroke-width:0.264583" x="510.63361" y="494.9899">Orion Nebula</tspan>
+				<tspan sodipodi:role="line" style="font-size:11.2889px;letter-spacing:-0.264583px;fill:#ffe290;fill-opacity:1;stroke-width:0.264583" x="510.63361" y="509.10101" id="tspan67">M42</tspan>
+			</text>
+		</g>
+		<g id="g65" style="display:inline" transform="translate(0.98140893,-5.395989)" inkscape:label="NGC 2169">
+			<ellipse style="display:inline;opacity:0.70073;fill:none;fill-opacity:1;stroke:#ffccaa;stroke-width:0.608819;stroke-dasharray:none;stroke-opacity:1" id="path58-3-8" cx="402.3212" cy="191.1048" rx="4.3749881" ry="4.8186369" />
+			<text xml:space="preserve" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:-0.264583px;display:inline;fill:#73d3ff;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-opacity:1" x="364.78641" y="182.71474" id="text7-3-2-0-7-9-9" inkscape:label="Orion">
+				<tspan sodipodi:role="line" id="tspan7-9-7-1-4-0-6" style="font-size:11.2889px;letter-spacing:-0.264583px;fill:#ffe290;fill-opacity:1;stroke-width:0.264583" x="364.78641" y="182.71474">The 37 Cluster</tspan>
+			</text>
+		</g>
+		<g id="g65-0" style="display:inline" transform="translate(344.8909,-118.599)" inkscape:label="NGC 2169">
+			<ellipse style="display:inline;opacity:0.70073;fill:none;fill-opacity:1;stroke:#ffccaa;stroke-width:0.845532;stroke-dasharray:none;stroke-opacity:1" id="path58-3-8-1" cx="399.67535" cy="195.86731" rx="6.9024639" ry="5.8909044" />
+			<text xml:space="preserve" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:-0.264583px;display:inline;fill:#73d3ff;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-opacity:1" x="344.31558" y="187.38646" id="text7-3-2-0-7-9-9-7" inkscape:label="Orion">
+				<tspan sodipodi:role="line" id="tspan7-9-7-1-4-0-6-3" style="font-size:11.2889px;letter-spacing:-0.264583px;fill:#ffe290;fill-opacity:1;stroke-width:0.264583" x="344.31558" y="187.38646">Pirate Moon Cluster</tspan>
+			</text>
+		</g>
+		<g id="g66" style="display:inline" transform="translate(14.772005,-30.67955)">
+			<ellipse style="display:inline;opacity:0.70073;fill:none;fill-opacity:1;stroke:#ffccaa;stroke-width:0.934077;stroke-dasharray:none;stroke-opacity:1" id="path58-3-5" cx="181.7249" cy="597.76929" rx="6.858192" ry="7.2356954" />
+			<text xml:space="preserve" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:-0.264583px;display:inline;fill:#73d3ff;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-opacity:1" x="137.02557" y="588.07324" id="text7-3-2-0-7-9-8" inkscape:label="Orion">
+				<tspan sodipodi:role="line" id="tspan7-9-7-1-4-0-8" style="font-size:11.2889px;letter-spacing:-0.264583px;fill:#ffe290;fill-opacity:1;stroke-width:0.264583" x="137.02557" y="588.07324">Heart-shaped Cluster</tspan>
+				<tspan sodipodi:role="line" style="font-size:11.2889px;letter-spacing:-0.264583px;fill:#ffe290;fill-opacity:1;stroke-width:0.264583" x="137.02557" y="602.18439" id="tspan66">M50</tspan>
+			</text>
+		</g>
+	</g>
+	<g inkscape:groupmode="layer" id="stars" inkscape:label="Stars" style="display:inline;opacity:1">
+		<text xml:space="preserve" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;font-family:Sans;-inkscape-font-specification:Sans;fill:#73d3ff;fill-opacity:1;stroke-width:0.264583" x="613.54779" y="543.74036" id="text1">
+			<tspan sodipodi:role="line" id="tspan1" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;font-family:Sans;-inkscape-font-specification:Sans;fill:#73d3ff;fill-opacity:1;stroke-width:0.264583" x="613.54779" y="543.74036">Rigel</tspan>
+		</text>
+		<text xml:space="preserve" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.1111px;font-family:Sans;-inkscape-font-specification:Sans;opacity:0.660584;fill:#73d3ff;fill-opacity:1;stroke:#000000;stroke-width:0.264583;stroke-opacity:1" x="485.49506" y="581.8457" id="text2">
+			<tspan sodipodi:role="line" id="tspan2" style="stroke-width:0.264583" x="485.49506" y="581.8457"></tspan>
+		</text>
+		<text xml:space="preserve" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;font-family:Sans;-inkscape-font-specification:Sans;opacity:1;fill:#73d3ff;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-opacity:1" x="484.1329" y="572.45917" id="text3">
+			<tspan sodipodi:role="line" id="tspan3" style="font-size:11.2889px;fill:#73d3ff;stroke:none;stroke-width:0.264583" x="484.1329" y="572.45917">Saiph</tspan>
+		</text>
+		<text xml:space="preserve" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;font-family:Sans;-inkscape-font-specification:Sans;opacity:1;fill:#73d3ff;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-opacity:1" x="559.99945" y="307.71542" id="text7">
+			<tspan sodipodi:role="line" id="tspan7" style="font-size:11.2889px;stroke-width:0.264583" x="559.99945" y="307.71542">Bellatrix</tspan>
+		</text>
+		<text xml:space="preserve" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;font-family:Sans;-inkscape-font-specification:Sans;display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-opacity:1" x="9.7996216" y="353.30188" id="text7-2">
+			<tspan sodipodi:role="line" id="tspan7-5" style="font-size:11.2889px;fill:#ffffff;stroke-width:0.264583" x="9.7996216" y="353.30188">Procyon</tspan>
+		</text>
+		<g id="g1-3" transform="translate(-497.32627,-20.824451)">
+			<text xml:space="preserve" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;font-family:Sans;-inkscape-font-specification:Sans;display:inline;opacity:1;fill:#73d3ff;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-opacity:1" x="568.99524" y="308.77377" id="text7-5">
+				<tspan sodipodi:role="line" id="tspan7-7" style="font-size:11.2889px;stroke-width:0.264583" x="568.99524" y="308.77377">Gomeisa</tspan>
+			</text>
+			<g id="g1-8" transform="translate(192.35207,-146.31457)">
+				<text xml:space="preserve" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;font-family:Sans;-inkscape-font-specification:Sans;display:inline;opacity:1;fill:#73d3ff;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-opacity:1" x="569.96558" y="307.05923" id="text7-7">
+					<tspan sodipodi:role="line" id="tspan7-01" style="font-size:11.2889px;stroke-width:0.264583" x="569.96558" y="307.05923">Alhena</tspan>
+				</text>
+			</g>
+		</g>
+		<text xml:space="preserve" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;font-family:Sans;-inkscape-font-specification:Sans;display:inline;fill:#73d3ff;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-opacity:1" x="758.27826" y="118.94479" id="text7-3" inkscape:label="Aldebaran">
+			<tspan sodipodi:role="line" id="tspan7-9" style="font-size:11.2889px;fill:#ffe290;fill-opacity:1;stroke-width:0.264583" x="758.27826" y="118.94479">Aldebaran</tspan>
+		</text>
+		<text xml:space="preserve" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;font-family:Sans;-inkscape-font-specification:Sans;display:inline;fill:#73d3ff;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-opacity:1" x="325.72687" y="27.070183" id="text7-3-7" inkscape:label="Aldebaran">
+			<tspan sodipodi:role="line" id="tspan7-9-4" style="font-size:11.2889px;fill:#ffe290;fill-opacity:1;stroke-width:0.264583" x="325.72687" y="27.070183">Tejat</tspan>
+		</text>
+		<text xml:space="preserve" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;font-family:Sans;-inkscape-font-specification:Sans;display:inline;fill:#73d3ff;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-opacity:1" x="358.77493" y="26.834539" id="text7-3-7-1" inkscape:label="Aldebaran">
+			<tspan sodipodi:role="line" id="tspan7-9-4-0" style="font-size:11.2889px;fill:#ffe290;fill-opacity:1;stroke-width:0.264583" x="358.77493" y="26.834539">Propus</tspan>
+		</text>
+		<text xml:space="preserve" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;font-family:Sans;-inkscape-font-specification:Sans;opacity:1;fill:#73d3ff;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-opacity:1" x="533.99524" y="419.43069" id="text4">
+			<tspan sodipodi:role="line" id="tspan4" style="font-size:11.2889px;stroke-width:0.264583" x="533.99524" y="419.43069">Mentaka</tspan>
+		</text>
+		<text xml:space="preserve" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;font-family:Sans;-inkscape-font-specification:Sans;opacity:1;fill:#73d3ff;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-opacity:1" x="522.35358" y="435.37186" id="text5">
+			<tspan sodipodi:role="line" id="tspan5" style="font-size:11.2889px;stroke-width:0.264583" x="522.35358" y="435.37186">Alnilam</tspan>
+		</text>
+		<text xml:space="preserve" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;font-family:Sans;-inkscape-font-specification:Sans;opacity:1;fill:#73d3ff;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-opacity:1" x="504.89111" y="448.40256" id="text6">
+			<tspan sodipodi:role="line" id="tspan6" style="font-size:11.2889px;stroke-width:0.264583" x="504.89111" y="448.40256">Alnitak</tspan>
+		</text>
+		<text xml:space="preserve" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;font-family:Sans;-inkscape-font-specification:Sans;display:inline;fill:#73d3ff;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-opacity:1" x="432.11661" y="292.53485" id="text7-3-2-0" inkscape:label="Aldebaran">
+			<tspan sodipodi:role="line" id="tspan7-9-7-1" style="font-size:11.2889px;fill:#ffe290;fill-opacity:1;stroke-width:0.264583" x="432.11661" y="292.53485">Betelgeuse</tspan>
+		</text>
+		<text xml:space="preserve" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;font-family:Sans;-inkscape-font-specification:Sans;display:inline;fill:#73d3ff;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-opacity:1" x="938.23254" y="644.43774" id="text7-3-2-0-2" inkscape:label="Aldebaran">
+			<tspan sodipodi:role="line" id="tspan7-9-7-1-9" style="font-size:11.2889px;fill:#ffe290;fill-opacity:1;stroke-width:0.264583" x="938.23254" y="644.43774">Zaurak</tspan>
+		</text>
+		<text xml:space="preserve" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;font-family:Sans;-inkscape-font-specification:Sans;display:inline;opacity:1;fill:#73d3ff;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-opacity:1" x="566.8786" y="308.50919" id="text7-9" transform="translate(-72.405472,-259.21401)">
+			<tspan sodipodi:role="line" id="tspan7-0" style="font-size:11.2889px;stroke-width:0.264583" x="566.8786" y="308.50919">Zeta Tauri</tspan>
+		</text>
+		<text xml:space="preserve" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;font-family:Sans;-inkscape-font-specification:Sans;display:inline;fill:#73d3ff;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-opacity:1" x="557.08405" y="511.38669" id="text7-96-7">
+			<tspan sodipodi:role="line" id="tspan7-99-7" style="font-size:11.2889px;stroke-width:0.264583" x="557.08405" y="511.38669">Hatysa</tspan>
+		</text>
+		<text xml:space="preserve" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;font-family:Sans;-inkscape-font-specification:Sans;display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-opacity:1" x="648.42273" y="508.92227" id="text7-96-8">
+			<tspan sodipodi:role="line" id="tspan7-99-72" style="font-size:11.2889px;fill:#ffffff;fill-opacity:1;stroke-width:0.264583" x="648.42273" y="508.92227">Cursa</tspan>
+		</text>
+	</g>
+</svg>

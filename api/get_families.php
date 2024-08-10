@@ -10,7 +10,8 @@ if ($conn->connect_error) {
     die('Connection failed: ' . $conn->connect_error);
 }
 
-$class = $_GET["class_id"];
+$class = $_GET["class_id"] ?? null;
+$order = $_GET["order_id"] ?? null;
 
 
 if ($class) {
@@ -19,6 +20,13 @@ if ($class) {
     INNER JOIN family ON animals.family_id = family.family_id
     WHERE animals.class_id = '$class'
     ORDER BY family.family_name;"; 
+}
+else if($order){
+  $sql = "SELECT DISTINCT family.family_id, family.family_name, family.common_name
+  FROM animals
+  INNER JOIN family ON animals.family_id = family.family_id
+  WHERE animals.order_id = '$order'
+  ORDER BY family.family_name;"; 
 }
 else{
 $sql = 'SELECT DISTINCT family.family_id, family.family_name, family.common_name

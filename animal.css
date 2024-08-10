@@ -15,9 +15,6 @@ i{
     font-size: medium;
     font-weight: 200;
 }
-.container{
-    padding-top: 1rem;
-}
 
 .centered{
     text-align: center;
@@ -49,3 +46,29 @@ i{
     color:white;
     font-family: "Playfair Display", serif;
 }
+.caption{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.carousel-item img {
+    /*max-height: 75vh;  Ensures the image does not exceed the viewport height */
+
+    object-fit: contain; /* Ensures the image covers the container while maintaining aspect ratio */
+  }
+
+  /* Default max-width for large screens */
+.card {
+    max-width: 85vw;
+  }
+  
+  /* Max-width for small screens */
+  @media (max-width: 768px) {
+    .card {
+      max-width: 95vw;
+    }
+    .species-header{
+        float: right;
+    }
+  }

@@ -13,7 +13,7 @@ if ($conn->connect_error) {
 $animal = $_GET["animal_id"];
 
 
-$stmt = $conn->prepare("SELECT a.common_name, a.scientific_name, a.thumbnail, c.class_name, ao.order_name, f.family_name, g.genus_name 
+$stmt = $conn->prepare("SELECT a.common_name, a.scientific_name, a.thumbnail, c.class_name, ao.order_name, f.family_name, g.genus_name
 FROM animals AS a 
 INNER JOIN class AS c ON a.class_id = c.class_id
 INNER JOIN animal_order AS ao ON a.order_id = ao.order_id
@@ -39,7 +39,4 @@ if ($result->num_rows > 0) {
 
 echo json_encode($data[0]);
 $conn->close();
-
-// Close the database connection
-
 ?>

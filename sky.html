@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document Title</title>
-    <!-- Add your CSS file here -->
+    <title>astrophotography - MR Photography</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
@@ -13,40 +12,235 @@
     <script src="navbar.js"></script>
 </head>
 <body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script><div class="container">
-    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="true">
-      <div class="carousel-inner">
-        <div class="carousel-item" data-bs-interval="2000">
-          <img src="images/orion.jpg" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item active" data-bs-interval="2000">
-          <img src="images/moon.jpg" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item" data-bs-interval="2000">
-          <img src="images/redmoona.jpg" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item" data-bs-interval="2000">
-          <img src="images/jupitera.jpg" class="d-block w-100" alt="...">
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-</div>
+  <style>
+    .containered {
+        position: relative;
+        display: inline-block;
+    }
+    .image {
+        display: block;
+    }
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .btn-group-toggle, .btn{
+      margin: 0.1rem 0 0.1rem 0;
 
-<script>
-    const myCarouselElement = document.querySelector('#myCarousel')
-    
-    const carousel = new bootstrap.Carousel(myCarouselElement, {
-      interval: 10000,
-      touch: false
-    })
+    }
+    .modal-content {
+    background-color: #495057;
+    color: white; /* Optional: to ensure text is readable */
+  }
+    .modal-footer {
+    padding: 0.25rem; /* Adjust the value as needed */
+    margin-bottom: 0; /* Remove any bottom margin */
+    border-top: none; /* Remove the border if desired */
+    background-color: #495057;
+  }
+
+  a > svg {
+  pointer-events: none;
+}
+  
+.bg-dark{
+    backdrop-filter: blur(10px);
+    background-color: rgb(33, 37, 41);
+    height: fit-content;
+    position: relative;
+    width: 100%;
+    z-index: 10;
+}
+</style>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script><div class="container">
+      <div class="container" id="about">
+        <div class="row">
+          <div class="col-md-12 mx-auto px-5">
+            <h2 class="text-center">the stars</h2>
+            <p class="text-center">The first lens I bought was the wide angle as it was less reliant on additional kit compared to the telephoto.<br>It was also a chance to practice using new software; DeepSkyStacker and RawTherapee.</p>
+          </div>
+          <div class="col-md-12 mx-auto px-3 pt-1">
+            <div class="containered">
+              <img src="images/astro/stars.jpg" alt="Your Image" class="img-fluid image">
+              <object id="mySVG" data="images/astro/stars-attempt2.svg" type="image/svg+xml" class="overlay" pointer-events="none"></object>
+            </div>
+          <div class="d-flex justify-content-center">
+            <div class="btn-group-toggle" data-toggle="buttons">
+              <label class="btn btn-secondary">
+                <input type="checkbox" checked autocomplete="off" class="toggle-control" data-target="stars"> Stars
+              </label>
+              <label class="btn btn-secondary">
+                <input type="checkbox" checked autocomplete="off" class="toggle-control" data-target="planets"> Planets
+              </label>
+              <label class="btn btn-secondary">
+                <input type="checkbox" checked autocomplete="off" class="toggle-control" data-target="nebulae"> Nebulae
+              </label>
+              <label class="btn btn-secondary">
+                <input type="checkbox" checked autocomplete="off" class="toggle-control" data-target="constellations"> Constellations
+              </label>
+              <label class="btn btn-secondary">
+                <input type="checkbox" checked autocomplete="off" class="pointer-control" data-target="links"> Links
+              </label>
+              <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal">
+                <button class="btn btn-secondary"> Full Screen </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      
+      </div>
+      <div class="modal top fade" id="imageModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-mdb-backdrop="true" data-mdb-keyboard="true">
+        <div class="modal-dialog modal-fullscreen">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="containered">
+                <img src="images/astro/stars.jpg" alt="Your Image" class="image">
+                <object id="mySVGModal" data="images/astro/stars-attempt2.svg" type="image/svg+xml" class="overlay"></object>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <div class="d-flex justify-content-center">
+                <div class="btn-group-toggle" data-toggle="buttons">
+                  <label class="btn btn-secondary active">
+                    <input type="checkbox" checked autocomplete="off" class="toggle-control" data-target="stars"> Stars
+                  </label>
+                  <label class="btn btn-secondary active">
+                    <input type="checkbox" checked autocomplete="off" class="toggle-control" data-target="planets"> Planets
+                  </label>
+                  <label class="btn btn-secondary active">
+                    <input type="checkbox" checked autocomplete="off" class="toggle-control" data-target="nebulae"> Nebulae
+                  </label>
+                  <label class="btn btn-secondary active">
+                    <input type="checkbox" checked autocomplete="off" class="toggle-control" data-target="constellations"> Constellations
+                  </label>
+                  <label class="btn btn-secondary active">
+                    <input type="checkbox" checked autocomplete="off" class="pointer-control" data-target="links"> Links
+                  </label>
+                  <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal">
+                    <button class="btn btn-secondary"> Exit </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+  function setupToggleControls(svgDoc, container) {
+    container.querySelectorAll('.toggle-control').forEach(function(control) {
+      control.addEventListener('change', function() {
+        var target = this.getAttribute('data-target');
+        svgDoc.getElementById(target).style.display = this.checked ? 'block' : 'none';
+      });
+    });
+  }
+  function setupPointerEvents(svgDoc, container) {
+    container.querySelectorAll('.pointer-control').forEach(function(control) {
+      control.addEventListener('change', function() {
+        var target = this.getAttribute('data-target');
+        svgDoc.getElementById(target).style.pointerEvents = this.checked ? 'auto' : 'none';
+      });
+    });
+  }
+  document.getElementById('mySVG').addEventListener('load', function() {
+    var svgDoc = this.contentDocument;
+    setupToggleControls(svgDoc, document);
+  });
+
+  document.getElementById('mySVGModal').addEventListener('load', function() {
+    var svgDoc = this.contentDocument;
+    setupToggleControls(svgDoc, document.querySelector('.modal-content'));
+  });
+});
+
+        </script>
+      </div>
+        <div class="row py-2">
+          <div class="col-md-12 mx-auto px-5 pt-1">
+            <h2 class="text-center">the moon</h2>
+            <p class="text-center">The natural starting point when trying to photograph the skies.  </p>
+        </div>
+            <div class="col-md-12">
+                <img src="images/astro/moon-2-1.jpg" alt="Your Image" class="img-fluid img-thumbnail">
+            </div>
+
+        </div>
+        <div class="row py-2">
+            <div class="col-md-12 mx-auto px-5 pt-3">
+                <h2 class="text-center"> jupiter </h2>
+                <p class="text-center">Having never owned a camera, I was hesistant on investing too much into something that may have only been a brief distraction. As such, all of my kit is entry/mid old second hand kit from MPB. To fill out the catalogue, I've also included some pictures from a previous phone, but hope to replace with better pictures when given the chance.</p>
+            </div>
+            <div class="col-md-6 py-1">
+                <img src="images/astro/jupiter-and-moons.jpg" alt="Your Image" class="img-fluid img-thumbnail">
+            </div>
+            <div class="col-md-6 py-1">
+              <img src="images/astro/stellaris-gallilean-moons.jpg" alt="Your Image" class="img-fluid img-thumbnail">
+            </div>
+        </div>
+        <div class="row py-2">
+          <div class="col-md-12 mx-auto px-5 pt-3">
+            <h2 class="text-center"> orion nebula</h2>
+            <p class="text-center">Having seen many YouTubers tackle M42, I tried my hand at this deep sky object without a telescope, astrophotography modified camera, star tracker or even a tripod. This </p>
+        </div>
+            <div class="col-md-12">
+                <img src="images/astro/orion.jpg" alt="Your Image" class="img-fluid img-thumbnail">
+            </div>
+
+        </div>
+        <div class="row py-2">
+          <div class="col-md-12 mx-auto px-5 pt-3">
+              <h2 class="text-center"> saturn </h2>
+              <p class="right-p">Clearly pushing my cheap setup to its limit, I was able to picture Saturn and a few moons. Saturn also has a huge number of moons with 146 currently known. Titan, the largest moon of Saturn can clearly be observed. Rhea appears visible, too, along with the largest of Saturn's outer moons, Iapetus. A surprise was the capture  of the StarLink 1226 satellite. As a longer exposure was used to try collect enough light for the moons, the satellite is seen as a bright streak.</p>
+          </div>
+          <div class="col-md-6 py-1">
+              <img src="images/astro/saturn-attempt-1.jpg" alt="Your Image" class="img-fluid img-thumbnail">
+          </div>
+          <div class="col-md-6 py-1">
+            <img src="images/astro/saturn-stellarium.jpg" alt="Your Image" class="img-fluid img-thumbnail">
+          </div>
+      </div>
+      <div class="row py-2">
+        <div class="col-md-12 mx-auto px-5 pt-3">
+            <h2 class="text-center"> northern lights </h2>
+            <p class="text-center">Having missed the majority solar storm, I only managed to get a handful of pictures of a dancing purple sky. I wrongly assumed it wasn't visible due to light pollution on our road. During the event, I also captured the blood moon crescent that was briefly visible.</p>
+        </div>
+        <div class="col-md-6 py-1">
+            <img src="images/astro/northern-lights.jpg" alt="Your Image" class="img-fluid img-thumbnail">
+        </div>
+        <div class="col-md-6 py-1">
+          <img src="images/astro/blood-moon.jpg" alt="Your Image" class="img-fluid img-thumbnail">
+        </div>
+    </div>
+    <div class="row py-2">
+      <div class="col-md-12 mx-auto px-5 pt-3">
+          <h2 class="text-center"> moonlight </h2>
+          <p class="text-center">On a whim, I took a long exposure with the wide angle lens. Despite being deep into a winter's night, it gave of the effect of daylight with the stars still visible. Notable </p>
+      </div>
+      <div class="col-md-12 py-1">
+        <img id="image" src="images/astro/long-exposure-moon.jpg" alt="Your Image" class="img-fluid img-thumbnail" onclick="swapImage()">
+    </div>
+
+    <script>
+        function swapImage() {
+            var image = document.getElementById('image');
+            //image.style.opacity = 0;
+            setTimeout(function() {
+                if (image.src.includes('long-exposure-moon.jpg')) {
+                    image.src = 'images/astro/long-exposure-moon-annotated.jpg';
+                } else {
+                    image.src = 'images/astro/long-exposure-moon.jpg';
+                }
+                //image.style.opacity = 1;
+            });
+        }
     </script>
+    </div>
+    </div>
+    </div>
+    <script src="footer.js"></script>
 </body>
 </html>

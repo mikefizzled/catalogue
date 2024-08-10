@@ -12,7 +12,6 @@
     position: relative;
   }
   #about {
-    padding-top: 1%;
     color: white;
   }
   .animal-card {
@@ -24,12 +23,36 @@
     background-color: #343a40;
     transition: transform 0.3s ease;
   }
+
+
+ /* The thumbnail image used in single animal page*/
+  .animal-thumbnail{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    max-height: 256px;
+    max-width: 256px;
+  }
   .p-card {
     margin-top: 0.5rem !important;
     margin-bottom: 0.5rem !important;
   }
- 
-  
+
+  .catalogue-filter{
+    padding: 1rem 2rem 1rem 2rem;
+    text-align: center;
+    color: white;
+    background-color: #343a40;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: #495057;
+  }
+  .animal-details{
+    text-align: center;
+    color: white;
+    background-color: #343a40;
+    border: #495057;
+  }
+
   .catalogue-card {
     margin: 0.5rem;
     padding: 1rem 2rem 1rem 2rem;
@@ -53,11 +76,14 @@
     transform: scale(1.05);
   }
   
-  .container {
+  .gallery {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content:center;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
+
   .card-body {
     display: flex;
     justify-content: center;
@@ -80,6 +106,7 @@
   .right-li {
     direction: rtl;
   }
+
   @media (max-width: 750px) {
     .right-h {
       text-align: center;
@@ -103,12 +130,22 @@
   .a-about:hover {
     color: gainsboro;
   }
-  p, h1, h2, h3, h4, li, select, option, label {
+  p, h1, h2, h3, h4, h5, h6, li, select, option, label {
     font-family: "Playfair Display", serif;
   }
   
-
+  #total{
+    margin: 0.25rem;
+  }
   body {
     background-color: #495057;
+   /* Footer height rules*/
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
   }
   
+  footer {
+    margin-top: auto;
+    /* Other styles for your footer */
+  }

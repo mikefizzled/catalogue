@@ -13,7 +13,7 @@ if ($conn->connect_error) {
 $animal = $_GET["animal_id"];
 
 
-$stmt = $conn->prepare("SELECT ai.filename, ai.caption, l.location_name
+$stmt = $conn->prepare("SELECT ai.filename, ai.caption, l.location_name, l.location_city, ai.date_taken, a.common_name
 FROM animal_images AS ai 
 INNER JOIN animals AS a ON ai.animal_id = a.animal_id
 INNER JOIN locations AS l on ai.location_id = l.location_id
