@@ -1,65 +1,32 @@
-.detail-card {
-    background-color: #343a40;
-    color:white;
-}
-
-.detail-table{
-    font-family: "Playfair Display", serif;
+  p, i {
+    font-size:large;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+  }
+ 
+  .detail-table{
+    margin-bottom: 0 !important;
+  }
+  .detail-table > tbody > tr > td,
+  .detail-table > tbody > tr > th {
     line-height: 2;
-}
-.no-border th {
-    border: none;
-
-}
-i{
-    font-size: medium;
-    font-weight: 200;
-}
-
-.centered{
-    text-align: center;
-}
-.detail-table > tbody > tr > td,
-.detail-table > tbody > tr > th,
-.detail-table > thead > tr > th,
-.detail-table > thead > tr > td {
+    font-family: "Playfair Display", serif;
     background-color: #343a40;
     border-bottom-width: 1px;
     color: white;
-    padding: .5rem 0.25rem;
+  }
+  .no-bottom-border {
+    border-bottom-width: 0px !important;
 }
 
-.card-body .table tbody {
-    display: block; /* Enable scrolling on tbody */
-    overflow-y: auto; /* Add vertical scrollbar */
-    width: 100%; /* Full width tbody (optional) */
-}
-
-.card-body .table thead,
-.card-body .table tbody tr {
-    display: table; /* Make rows behave like rows */
-    width: 100%; /* Set a width */
-    table-layout: fixed; /* Ensure consistent cell width */
-}
-.return-button{
-    background-color: #343a40;
-    color:white;
-    font-family: "Playfair Display", serif;
-}
-.caption{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-}
-.carousel-item img {
+  .carousel-item img {
     /*max-height: 75vh;  Ensures the image does not exceed the viewport height */
-
+  
     object-fit: contain; /* Ensures the image covers the container while maintaining aspect ratio */
   }
-
+  
   /* Default max-width for large screens */
-.card {
+  .card {
     max-width: 85vw;
   }
   
@@ -68,7 +35,5 @@ i{
     .card {
       max-width: 95vw;
     }
-    .species-header{
-        float: right;
-    }
   }
+  

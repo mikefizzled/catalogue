@@ -18,13 +18,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <div class="container-fluid">
       <div class="row animal-details justify-content-center py-2">
-        <div class="col-sm-6 col-md-4 d-flex flex-column justify-content-center order-1 order-md-1">
-          <h2 class="centered" id="common-name"></h2>
-          <h4 class="centered">
-            <i id="scientific-name"></i>
-          </h4>
+        <div id="header-text" class="col-sm-6 col-md-4 d-flex flex-column justify-content-center order-1 order-md-1 text-center">
+          <h2 id="common-name"></h2>
+          <h4><i id="scientific-name"></i></h4>
         </div>
-        <div class="col-md-4 float-sm-start col-12 d-flex flex-column justify-content-center order-md-2 order-3">
+        <div id="info-table" class="col-sm-12 col-md-4 col-12 d-flex flex-column justify-content-center order-md-2 order-3">
           <table class="table detail-table table-responsive">
             <tbody>
               <tr>
@@ -42,24 +40,24 @@
                 <td id="family"></td>
               </tr>
               <tr>
-                <th scope="row">Genus</th>
-                <td id="genus"></td>
+                <th scope="row" class="no-bottom-border">Genus</th>
+                <td id="genus" class="no-bottom-border"></td>
               </tr>
             </tbody>
           </table>
         </div>
-        <div class="col-sm-6 animal-thumbnail col-md-4 d-flex flex-column justify-content-center mx-auto order-md-3 order-2">
+        <div id="animal-thumbnail" class="col-sm-6 animal-thumbnail col-md-4 d-flex flex-column justify-content-center mx-auto order-md-3 order-2">
           <img id="thumbnail" class="img-fluid img-thumbnail">
         </div>
       </div>
       <div class="row">
         <div class="col-md-12  d-flex justify-content-center">
-          <div class="card ">
+          <div class="card">
             <div id="carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
               <div class="carousel-inner" data-bs-ride="true">
                 <img class="card-img-top img-fluid" alt="Animal Image" id="main-picture">
                 <div class="card-body">
-                  <h5 class="card-title">Caption</h5>
+                  <h5 class="card-title">Needs Adding</h5>
                 </div>
               </div>
             </div>

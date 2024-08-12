@@ -50,8 +50,8 @@ fetch(`api/get_animal_photos.php?animal_id=${animalId}`)
 			col.setAttribute('data-bs-interval', '10000');
 			col.innerHTML = `
           <img src="images/${animal_image.filename}" class="d-block img-fluid" alt="${animal_image.caption ? animal_image.caption : 'A picture of a ' + animal_image.common_name}">
-          <div class="caption">
-              <h5>${animal_image.location_name}, ${animal_image.location_city} - ${formattedDate} </h5>
+          <div>
+              <p class="text-center">${animal_image.location_name}, ${animal_image.location_city} - ${formattedDate} </p>
             </div>
           </div>`;
 			galleryContainer.appendChild(col);
