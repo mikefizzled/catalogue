@@ -37,15 +37,7 @@
     margin-bottom: 0.5rem !important;
   }
 
-  .catalogue-filter{
-    padding: 1rem 2rem 1rem 2rem;
-    text-align: center;
-    color: white;
-    background-color: #343a40;
-    flex-wrap: wrap;
-    justify-content: center;
-    border: #495057;
-  }
+
   .animal-details{
     text-align: center;
     color: white;
@@ -66,22 +58,9 @@
     border-width: 1px;
     border-radius: 1rem;
   }
-  .option-a {
-    width: fit-content;
-    padding: 0.5rem;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
+
   .animal-card:hover {
     transform: scale(1.05);
-  }
-  
-  .gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:center;
-    margin-top: 20px;
-    margin-bottom: 20px;
   }
 
   .card-body {
@@ -90,9 +69,7 @@
     align-items: center;
     min-width: fit-content;
   }
-  .a-card {
-    text-decoration: none;
-  }
+
   .left {
     text-align: left;
   }

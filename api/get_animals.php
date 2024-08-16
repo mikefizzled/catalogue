@@ -9,43 +9,59 @@ $conn = new mysqli($host, $user, $pass, $dbname);
 if ($conn->connect_error) {
     die('Connection failed: ' . $conn->connect_error);
 }
-
+$class = $_GET["class_id"] ?? null;
 $family = $_GET["family_id"] ?? null;
 $order = $_GET["order_id"] ?? null;
 $current_page = isset($_GET['page']) ? intval($_GET['page']) : 1;
 
 $cards_per_page = 12;
 
+$query = "SELECT animal_id, common_name, thumbnail FROM animals ORDER BY common_name";
+$params = [];
+$types = "";
 
+// Associative array to store conditions
+$conditions = [];
+
+// 0 is value for 'all' therefore will not be added to check
 if ($family) {
-    // Binding to avoid potential sql injections using the GET
-    $stmt = $conn->prepare("SELECT animal_id, common_name, thumbnail FROM animals WHERE family_id = ? ORDER BY common_name");
-    $stmt->bind_param("s", $family);
-} else if($order){
-    $stmt = $conn->prepare("SELECT animal_id, common_name, thumbnail FROM animals WHERE order_id = ? ORDER BY common_name");
-    $stmt->bind_param("s", $order);
-} else {
-    // Query to retrieve animal names and picture URLs
-    $stmt = $conn->prepare("SELECT animal_id, common_name, thumbnail FROM animals ORDER BY common_name");
+    $conditions['family_id'] = $family;
+    $types .= "s";
 }
-$stmt->execute();
-$result = $stmt->get_result();
-$data = array();
+if ($order) {
+    $conditions['order_id'] = $order;
+    $types .= "s";
+}
+if ($class) {
+    $conditions['class_id'] = $class;
+    $types .= "s";
+}
 
-if ($result->num_rows > 0) {
-    while ($row = $result->fetch_assoc()) {
-        $data[] = $row;
+// Append conditions to the query
+if (!empty($conditions)) {
+    $query .= " WHERE " . implode(" AND ", array_map(function($key) {
+        return "$key = ?";
+    }, array_keys($conditions)));
+}
+
+$stmt = $conn->prepare($query);
+if (!empty($conditions)) {
+    $stmt->bind_param($types, ...array_values($conditions));
+}
+if ($stmt->execute()) {
+    $result = $stmt->get_result();
+    
+    if ($result->num_rows > 0) {
+        $data = $result->fetch_all(MYSQLI_ASSOC);
+    } else {
+        $data = array("message" => "No results found");
     }
 } else {
-    // Handle no results (e.g., log an error)
-    // You can customize the response message here
-    $data[] = array("message" => "No results found");
+    $data = array("message" => "Query execution failed: " . $stmt->error);
 }
 
+$stmt->close();
 $conn->close();
 
 echo json_encode($data);
-
-// Close the database connection
-
 ?>
