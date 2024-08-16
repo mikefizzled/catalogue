@@ -16,7 +16,7 @@ $current_page = isset($_GET['page']) ? intval($_GET['page']) : 1;
 
 $cards_per_page = 12;
 
-$query = "SELECT animal_id, common_name, thumbnail FROM animals ORDER BY common_name";
+$query = "SELECT animal_id, common_name, thumbnail FROM animals";
 $params = [];
 $types = "";
 
@@ -43,11 +43,14 @@ if (!empty($conditions)) {
         return "$key = ?";
     }, array_keys($conditions)));
 }
+// Append order by to maintain the required SQL ordering
+$query .= " ORDER BY common_name";
 
 $stmt = $conn->prepare($query);
 if (!empty($conditions)) {
     $stmt->bind_param($types, ...array_values($conditions));
 }
+
 if ($stmt->execute()) {
     $result = $stmt->get_result();
     
