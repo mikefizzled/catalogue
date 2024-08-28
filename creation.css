@@ -1,0 +1,44 @@
+button, input, optgroup, select, textarea, label, option {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.catalogue-filter{
+    padding: 1rem 2rem 1rem 2rem;
+    text-align: center;
+    color: white;
+    background-color: #343a40;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: #495057;
+  }
+
+  .a-filter{
+    padding: 1rem 2rem 1rem 2rem;
+    text-align: center;
+    color: white;
+    background-color: #495057;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: #495057;
+  }
+h2{
+color: white;
+text-align: center;
+}
+select{
+    min-width: 25rem;
+}
+  .collapsing-card{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 1rem;
+    text-align: center;
+    color: white;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+.card-border{
+    margin: 0.5rem 0 0.5rem;
+    background-color: #495057;
+    border: 2px solid darkgray;
+    border-radius: 1rem;
+}

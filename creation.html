@@ -8,54 +8,113 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-    <!-- link rel="stylesheet" href="style.css"-->
+    <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" sizes="32x32" href="mr-photography.png">
     <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="creation.css">
     <script src="navbar.js"></script>
   </head>
   <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <div class="container-fluid">
-        <form id="animalForm" class="needs-validation" novalidate>
-            <h2>Add New Animal</h2>
-            <div class="form-group py-2 px-2">
-                <label for="common-name-field">Common Name</label>
+    <div class="catalogue-filter">
+      <h2>creation</h2>
+    </div>
+    <div class="catalogue-filter">
+      <div class="row">
+        <div class="col-4">
+          <h3>add new animal <button class="btn btn-dark" type="button" data-bs-toggle="collapse" data-bs-target="#add-a-collapse" aria-expanded="false" aria-controls="add-class-collapse">+</button></h3>
+          
+        </div>
+        <div class="col-4">
+          <h3>add taxonomy <button class="btn btn-dark" type="button" data-bs-toggle="collapse" data-bs-target="#add-b-collapse" aria-expanded="false" aria-controls="add-class-collapse">+</button></h3>
+        </div>
+        <div class="col-4">
+          <h3>add pictures <button class="btn btn-dark" type="button" data-bs-toggle="collapse" data-bs-target="#add-c-collapse" aria-expanded="false" aria-controls="add-class-collapse">+</button></h3>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex justify-content-center align-items-center">
+        <div class="collapse card-border" id="add-a-collapse">
+        <form id="animalForm">
+            <h2>new animal</h2>
+            <!-- COMMON NAME -->
+            <div class="row collapsing-card">
+            <div class="col" style="font-family: Playfair Display">
+                <label for="common-name-field">common name</label>
                 <input type="text" class="form-control" id="common-name-field" aria-describedby="commonNameHelp" placeholder="Common Name" required>
             </div>
-            <div class="form-group py-2 px-2">
+            <!-- SCIENTIFIC NAME -->
+            <div class="col">
                 <label for="scientific-name-field">Scientific Name</label>
                 <input type="text" class="form-control" id="scientific-name-field" aria-describedby="scientificNameHelp" placeholder="Scientific Name" required>
             </div>
-            <div class="form-group py-2 px-2">
-                <label for="class-field">Class</label>
-                <select class="form-select" id="class-field" aria-describedby="classHelp" required>
-                    <option hidden selected>Select Class</option>
-                    <!-- Add options here -->
-                </select>
             </div>
-            <div class="form-group py-2 px-2">
-                <div class="form-row">
-                    <div class="col">
-                        <label for="order-field">Order</label>
-                        <select class="form-select" id="order-field" aria-describedby="orderHelp" required>
-                            <option hidden selected>Select Order</option>
-                        </select>
-                    </div>
-                    <div class="col px-2 py-2">
-                        <button class="btn btn-primary collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#add-order-collapse" aria-expanded="false" aria-controls="multiCollapseExample2">Add Order</button>
-                    </div>
+            <div class="row collapsing-card">
+            <!-- CLASS -->
+                <div class="col">
+                    <label for="class-field">Class</label>
+                    <select class="form-select" id="class-field" aria-describedby="classHelp" required>
+                        <option hidden selected>Select Class</option>
+                    </select>
+                </div>
+            <!-- ORDER -->
+                <div class="col">
+                    <label for="order-field">Order</label>
+                    <select class="form-select" id="order-field" aria-describedby="orderHelp" required>
+                        <option hidden selected>Select Order</option>
+                    </select>
                 </div>
             </div>
-            
-            <div class="multi-collapse collapse" id="add-order-collapse">
-                <div class="card card-body">
-                 <form>
-                    <div class="form-group py-2 px-2">
-                        <h3>Add New Order</h3>
-                        <div class="form-row">
+            <!-- FAMILY -->
+            <div class="row collapsing-card">
+                <div class="col">
+                <label for="family-field">Family</label>
+                <select class="form-select" id="family-field" aria-describedby="familyHelp" required>
+                    <option hidden selected>Select Family</option>
+                </select>
+                </div>
+                <!-- GENUS -->
+                <div class="col">
+                    <label for="genus-field">Genus</label>
+                    <select class="form-select" id="genus-field" aria-describedby="genusHelp" required>
+                        <option hidden selected>Select Genus</option>
+                    </select>
+                </div>
+            </div>
+            <!-- THUMBNAIL -->
+            <div class="col collapsing-card">
+            <label for="thumbnail-field">Thumbnail URL</label>
+            <input type="text" class="form-control" id="thumbnail-field" aria-describedby="thumbnailHelp" placeholder="Thumbnail URL" required>
+            </div>
+            <div class="flex-column collapsing-card">        <button type="submit" class="btn btn-dark">Submit</button></div> 
+
+        </form>
+        </div>
+    </div>
+    <!-- TAXONOMY COLLAPSE -->
+    <!-- NEW CLASS -->
+    <div class="d-flex justify-content-center align-items-center">
+        <div class="collapse" id="add-b-collapse">
+            <div class="row">
+                <div class="collapsing-card col-6 card-border">
+                    <form>
+                        <h3>add new class</h3>
+                        <div class="row">
                             <div class="col">
-                                <label for="order-field">Order Name</label>
-                                <input type="text" class="form-control" id="genus-field" aria-describedby="genusHelp" placeholder="Genus ID" required>
+                                <label for="order-field">class name</label>
+                                <input type="text" class="form-control" id="add-class-text" aria-describedby="genusHelp" placeholder="Class Name" required>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!-- NEW ORDER -->
+                <div class="collapsing-card col-6 card-border">
+                    <form>
+                        <h3>add new order</h3>
+                        <div class="row">
+                            <div class="col">
+                                <label for="order-field">order name</label>
+                                <input type="text" class="form-control" id="add-genus-text" aria-describedby="genusHelp" placeholder="Order Name" required>
                             </div>
                             <div class="col">
                                 <label for="class-field">Parent Class</label>
@@ -64,51 +123,117 @@
                                 </select>
                             </div>
                         </div>
-                    </div>
-                 </form>
+                    </form>
                 </div>
-              </div>
-            <div class="form-group py-2 px-2">
-                <label for="family-field">Family</label>
-                <select class="form-select" id="family-field" aria-describedby="familyHelp" required>
-                    <option hidden selected>Select Family</option>
-                    <!-- Add options here -->
-                </select>
             </div>
-            <div class="form-group py-2 px-2">
-                <label for="genus-field">Genus</label>
-                <input type="text" class="form-control" id="genus-field" aria-describedby="genusHelp" placeholder="Genus ID" required>
+            <div class="row">
+                <div class="collapsing-card col-6 card-border">
+                    <form>
+                        <h3>Add New Family</h3>
+                        <div class="row">
+                            <div class="col">
+                                <label for="order-field">Family Name</label>
+                                <input type="text" class="form-control" id="add-genus-text" aria-describedby="genusHelp" placeholder="Family Name" required>
+                            </div>
+                            <div class="col">
+                                <label for="class-field">Parent Class</label>
+                                <select class="form-select" id="class-field" aria-describedby="classHelp" required>
+                                    <option hidden selected>Select Class</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="collapsing-card col-6 card-border">
+                    <form>
+                        <h3>Add New Genus</h3>
+                        <div class="row">
+                            <div class="col">
+                                <label for="order-field">Order Name</label>
+                                <input type="text" class="form-control" id="add-genus-text" aria-describedby="genusHelp" placeholder="Order Name" required>
+                            </div>
+                            <div class="col">
+                                <label for="class-field">Parent Class</label>
+                                <select class="form-select" id="class-field" aria-describedby="classHelp" required>
+                                <option hidden selected>Select Class</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
-            <div class="form-group py-2 px-2">
-                <label for="thumbnail-field">Thumbnail URL</label>
-                <input type="text" class="form-control" id="thumbnail-field" aria-describedby="thumbnailHelp" placeholder="Thumbnail URL" required>
-            </div>
-            <button type="submit">Submit</button>
-        </form>
-
-<div class="my-2"></div>
-    <p class="d-inline-flex gap-1">
-        <a class="btn btn-primary collapsed" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Toggle first element</a>
-        <button class="btn btn-primary collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Toggle second element</button>
-      </p>
-      <div class="row mx-auto px-5">
-        <div class="col-12">
-          <div class="multi-collapse collapse" id="multiCollapseExample1">
-            <div class="card card-body">
-              Some placeholder content for the first collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
-            </div>
-          </div>
         </div>
-        <div class="col-12">
-          <div class="multi-collapse collapse" id="multiCollapseExample2">
-            <div class="card card-body">
-                
+    </div>
+    <!-- NEW PHOTO -->
+    <div class="d-flex justify-content-center align-items-center">
+        <div class="collapse card-border" id="add-c-collapse">
+        <form id="animalForm">
+            <h2>new photo</h2>
+            <!-- COMMON NAME -->
+            <div class="row collapsing-card">
+            <div class="col" style="font-family: Playfair Display">
+                <label for="common-name-field">Caption</label>
+                <input type="text" class="form-control" id="common-name-field" aria-describedby="commonNameHelp" placeholder="Photo Caption">
             </div>
-          </div>
+            <!-- SCIENTIFIC NAME -->
+            <div class="col">
+                <label for="scientific-name-field">Scientific Name</label>
+                <input type="text" class="form-control" id="scientific-name-field" aria-describedby="scientificNameHelp" placeholder="Scientific Name" required>
+            </div>
+            </div>
+            <div class="row collapsing-card">
+            <!-- Photo Location -->
+                <div class="col">
+                    <label for="class-field">location</label>
+                    <select class="form-select" id="class-field" aria-describedby="classHelp" required>
+                        <option hidden selected>Select Location</option>
+                    </select>
+                </div>
+            <!-- ORDER -->
+                <div class="col">
+                    <label for="order-field">date</label>
+                    <select class="form-select" id="order-field" aria-describedby="orderHelp" required>
+                        <option hidden selected>Select Order</option>
+                    </select>
+                </div>
+            </div>
+            <!-- FAMILY -->
+            <div class="row collapsing-card">
+                <div class="col">
+                    <label for="formFile" class="form-label">upload picture</label>
+                    <input class="form-control" type="file" id="formFile">
+                </div>
+            </div>
+            <div class="divider">OR</div>
+            <!-- THUMBNAIL -->
+            <div class="col collapsing-card">
+            <label for="thumbnail-field">file name</label>
+            <input type="text" class="form-control" id="thumbnail-field" aria-describedby="thumbnailHelp" placeholder="Thumbnail URL" required>
+            </div>
+            <div class="flex-column collapsing-card">        <button type="submit" class="btn btn-dark">Submit</button></div> 
+        </form>  <style>
+            .divider {
+              display: flex;
+              align-items: center;
+              text-align: center;
+              color: white;
+            }
+            .divider::before,
+            .divider::after {
+              content: '';
+              flex: 1;
+              border-bottom: 1px solid white;
+            }
+            .divider:not(:empty)::before {
+              margin-right: .25em;
+            }
+            .divider:not(:empty)::after {
+              margin-left: .25em;
+            }
+          </style>
         </div>
-      </div>
     </div>
     <script src="creation.js"></script>
     <script src="footer.js"></script>
-</body>
+  </body>
 </html>
