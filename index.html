@@ -12,42 +12,113 @@
     <script src="navbar.js"></script>
 </head>
 <body>
+    <style>
+        .carousel-item.active img {
+            transform: scale(1.08);
+        }
+        .text-overlay {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            text-align: center;
+        }
+        .centered-div {
+            border-width: 2px;
+            border-style: solid;
+            border-radius: 5rem;
+            width: fit-content;
+            padding: 1rem;
+            font-family: 'Playfair Display', serif;
+        }
+        h2, p {
+            text-shadow: 1px 1px black;
+        }
+        .carousel-item img {
+            object-fit: cover;
+            height: 100vh; /* Full height */
+            max-height: 70vh; /* Maximum height */
+            transition: transform 10s ease;
+        }
+        .overlay {
+            position: relative;
+        }
+        .overlay::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+        .text-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            z-index: 2;
+            text-align: center;
+        }
+    </style>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-          <div id="front-page-carousel" class="carousel slide carousel-fade" data-bs-ride="true">
-            <div class="carousel-inner">
-              <div class="carousel-item active" data-bs-interval="10000">
-                <img src="images/goldfincha.jpg" class="d-block w-100  img-fluid" alt="...">
-              </div>
-              <div class="carousel-item" data-bs-interval="10000">
-                <img src="images/mouse1a.jpg" class="d-block w-100 img-fluid" alt="...">
-              </div>
-              <div class="carousel-item" data-bs-interval="10000">
-                <img src="images/robina.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item" data-bs-interval="10000">
-                <img src="images/squirrel1a.jpg" class="d-block w-100" alt="...">
-              </div>
+    <div id="front-page-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+                <div class="overlay">
+                    <img src="images/cormorant-1.jpg" class="d-block w-100 img-fluid" alt="...">
+                    <div class="text-overlay">
+                        <h2>revisiting an old hobby</h2>
+                        <p>just some filler text</p>
+                        <a href="./catalogue.html" style="text-decoration: none; color: white;">
+                            <div class="centered-div">explore the catalogue</div>
+                        </a>
+                    </div>
+                </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#front-page-carousel" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#front-page-carousel" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
+            <div class="carousel-item" data-bs-interval="10000">
+                <div class="overlay">
+                    <img src="images/astro/moon-2.jpg" alt="...">
+                    <div class="text-overlay">
+                        <h2>exploring somewhere new</h2>
+                        <p>just some filler text</p>
+                        <a href="./sky.html" style="text-decoration: none; color: white;">
+                            <div class="centered-div">explore the skies</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="10000">
+                <div class="overlay">
+                    <img src="images/starling-1.JPG" alt="...">
+                    <div class="text-overlay">
+                        <h2>portfolio passion project</h2>
+                        <p>just some filler text</p>
+                        <a href="./sky.html" style="text-decoration: none; color: white;">
+                            <div class="centered-div">read my story</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-   
-          <script>
-            const myCarouselElement = document.querySelector('#myCarousel')
-            
-            const carousel = new bootstrap.Carousel(myCarouselElement, {
-              interval: 10000,
-              touch: false
-            })
-            </script>
-
-<script src="footer.js"></script>
+    <script>
+        const myCarouselElement = document.querySelector('#front-page-carousel');
+        $(document).ready(function() {
+            function adjustCarouselHeight() {
+                var windowHeight = $(window).height();
+                $('.carousel-item img').css('height', windowHeight);
+            }
+            adjustCarouselHeight();
+            $(window).resize(function() {
+                adjustCarouselHeight();
+            });
+        });
+    </script>
+    <script src="footer.js"></script>
 </body>
 </html>
