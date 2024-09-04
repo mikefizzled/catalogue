@@ -13,7 +13,7 @@ if ($conn->connect_error) {
 // working on the assumption that entries are only added to the database when they will be used
 // alternate solution could include select distinct and joining the photos table
 
-$sql = 'SELECT location_id, location_name, latitude, longitude FROM locations';
+$sql = 'SELECT location_id, location_name, latitude, longitude, area_caption, image FROM locations';
 
 $result = $conn->query($sql);
 
