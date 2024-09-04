@@ -10,8 +10,7 @@ document.write(`
               MR Photography
             </h4>
             <p>
-              Here you can use rows and columns to organize your footer content. Lorem ipsum
-              dolor sit amet, consectetur adipisicing elit.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             </p>
           </div>
 
@@ -20,13 +19,13 @@ document.write(`
               collections
             </h5>
             <p>
-              <a href="#!" class="text-reset">animals</a>
+              <a href="catalogue.html" class="text-reset">animals</a>
             </p>
             <p>
-              <a href="#!" class="text-reset">astrophotography</a>
+              <a href="sky.html" class="text-reset">astrophotography</a>
             </p>
             <p>
-              <a href="#!" class="text-reset">wild domestic</a>
+              <a href="map.html" class="text-reset">map</a>
             </p>
           </div>
 
