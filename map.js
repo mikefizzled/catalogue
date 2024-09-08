@@ -68,10 +68,11 @@ async function getAnimalsAtLocation (locationId) {
         const res = await fetch(`api/get_animals_at_location.php?location_id=${locationId}`);
         const data = await res.json();
         const animalNames = data.map(item => `<a href="./animal.html?animal_id=${item.animal_id}">${item.common_name}</a>`);
+
         return `<ul>${animalNames.map(name => `<li>${name}</li>`).join('')}</ul>`;
     } catch (error) {
         console.error('Error fetching animals at location:', error);
-        return '<p>Error loading animals</p>';
+        return '<p>Awaiting pictures taken at this location</p>';
     }
 }
 

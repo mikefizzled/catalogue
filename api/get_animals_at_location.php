@@ -30,7 +30,7 @@ if ($result) {
             $data[] = $row;
         }
     } else {
-        echo json_encode(array("message" => "0 results"));
+        echo json_encode(array("no_animals" => "Images from here will be added soon!"));
     }
 } else {
     echo json_encode(array("error" => $conn->error));
