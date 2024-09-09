@@ -6,6 +6,30 @@ function updateElementText(elementId, text)
 	document.getElementById(elementId).textContent = text;
 }
 
+fetch(`api/get_conservation_status.php?animal_id=${animalId}`)
+	.then(response => response.json())
+	.then(data => 
+	{
+		const conservationDiv = document.getElementById('conservation');
+		if(data.error){
+			//add ignore
+		}
+		else{
+            conservationDiv.innerHTML = `
+				<div class="row conservation-item">
+				<p>UK Conservation Status</p>
+                    <div class="col-md-6 text-content">
+                        <p class="description">${data.description}</p>
+                        <p class="list-name">${data.list_name}</p>
+                    </div>
+                    <div class="col-md-6 d-flex justify-content-center">
+                        <img class="conservation-image" src='images/conservation_icons/${data.filename}' alt='${data.description}'>
+                    </div>
+                </div>
+            `;
+		}
+	}
+	)
 // Collect the text information for table and set thumbnail
 fetch(`api/get_single_animal.php?animal_id=${animalId}`)
 	.then(response => response.json())
@@ -29,6 +53,7 @@ fetch(`api/get_single_animal.php?animal_id=${animalId}`)
 		console.error('Error fetching data:', error);
 	});
 
+ 
 fetch(`api/get_animal_photos.php?animal_id=${animalId}`)
 	.then(response => response.json())
 	.then(data =>

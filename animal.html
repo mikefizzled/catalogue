@@ -15,6 +15,32 @@
     <script src="navbar.js"></script>
   </head>
   <body>
+    <style>
+
+.conservation-item {
+
+    overflow: hidden;
+    padding: 20px;
+}
+
+.description {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.list-name {
+    font-size: 1em;
+    color: #bebebe;
+}
+
+.conservation-image {
+    max-width: 50px;
+}
+.list-name {
+    font-size: 1em;
+}
+
+    </style>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <div class="container-fluid">
       <div class="row animal-details justify-content-center py-2">
@@ -45,6 +71,7 @@
               </tr>
             </tbody>
           </table>
+          <div id="conservation" class="container"></div>
         </div>
         <div id="animal-thumbnail" class="col-sm-6 animal-thumbnail col-md-4 d-flex flex-column justify-content-center mx-auto order-md-3 order-2">
           <img id="thumbnail" class="img-fluid img-thumbnail">

@@ -1,5 +1,5 @@
 <?php
-// Connect to your database (replace with your actual credentials)
+
 $host = 'localhost';
 $user = 'root';
 $pass = '';
