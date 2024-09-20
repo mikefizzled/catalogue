@@ -12,8 +12,15 @@ if ($conn->connect_error) {
 
 $order = $_GET["order_id"] ?? null;
 $class = $_GET["class_id"] ?? null;
+$crud = $_GET["crud"] ?? null;
 
-if ($order) {
+if($crud){
+  $sql = "SELECT a.order_id, a.order_name, c.class_common_name
+  FROM animal_order AS a
+  INNER JOIN class AS c ON a.class_id = c.class_id
+  ORDER BY c.class_common_name, a.order_name;";
+}
+else if ($order) {
     $sql = "SELECT DISTINCT animal_order.order_id, animal_order.order_name
     FROM animals
     INNER JOIN animal_order ON animals.order_id = animal_order.order_id

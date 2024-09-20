@@ -11,7 +11,7 @@ if ($conn->connect_error) {
 }
 
                                     
-$sql = 'SELECT DISTINCT class.class_id, class.class_common_name
+$sql = 'SELECT DISTINCT class.class_id, class.class_common_name, class.class_name
 FROM animals
 INNER JOIN class ON animals.class_id = class.class_id
 ORDER BY class.class_common_name;';

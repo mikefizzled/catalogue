@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taxonomy Management</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="mr-photography.png">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+    <script src="navbar.js"></script>
+</head>
+<body>
+    <style>
+          .detail-table{
+    margin-bottom: 0 !important;
+  }
+  .detail-table > tbody > tr > td,
+  .detail-table > tbody > tr > th,
+  thead {
+    line-height: 2;
+    font-family: "Playfair Display", serif;
+    background-color: #343a40;
+    border-bottom-width: 1px;
+    color: white;
+  }
+  .table-title{
+    background: #435d7d;
+    color: #fff;
+    padding: 16px 30px;
+    min-width: 100%;
+    border-radius: 3px 3px 0 0;
+  }
+  .table-wrapper{
+    min-width: 1000px;
+    padding: 20px 25px;
+    border-radius: 3px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+  }
+    </style>
+    <div class="container mt-5">
+        <h2>Taxonomy Management</h2>
+        <ul class="nav nav-tabs" id="taxonomyTabs" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="class-tab" data-toggle="tab" href="#class" role="tab">Class</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="order-tab" data-toggle="tab" href="#order" role="tab">Order</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="family-tab" data-toggle="tab" href="#family" role="tab">Family</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="genus-tab" data-toggle="tab" href="#genus" role="tab">Genus</a>
+            </li>
+        </ul>
+        <div class="tab-content" id="taxonomyTabsContent">
+            <div class="tab-pane fade show active" id="class" role="tabpanel">
+                <div class="table-wrapper">
+                    <div class="table-title">
+                        <div class="row">
+                            <div class="col-6">
+                                <h3>Manage Classes</h3>
+                            </div>
+                            <div class="col-6 right">
+                                <button class="btn btn-dark" data-toggle="modal" data-target="#addClassModal">Add New Class</button>
+                            </div>
+                        </div>
+                    </div>
+                    <table class="table table-bordered detail-table" id="class-table">
+                        <thead>
+                            <tr>
+                                <th>Common Name</th>
+                                <th>Scientific Name</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Populate this with data from your backend -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="family" role="tabpanel">
+                <button class="btn btn-primary my-3" data-toggle="modal" data-target="#addFamilyModal">Add New Family</button>
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Populate this with data from your backend -->
+                    </tbody>
+                </table>
+            </div>
+            <div class="tab-pane fade" id="genus" role="tabpanel">
+                <button class="btn btn-primary my-3" data-toggle="modal" data-target="#addGenusModal">Add New Genus</button>
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Populate this with data from your backend -->
+                    </tbody>
+                </table>
+            </div>
+            <div class="tab-pane fade" id="order" role="tabpanel">
+                <div class="table-wrapper">
+                    <div class="table-title">
+                        <div class="row">
+                            <div class="col-6">
+                                <h3>Manage Orders</h3>
+                            </div>
+                            <div class="col-6 right">
+                                <button class="btn btn-dark" data-toggle="modal" data-target="#addOrderModal">Add New Order</button>
+                            </div>
+                        </div>
+                    </div>
+                    <table class="table table-bordered detail-table" id="order-table">
+                        <thead>
+                            <tr>
+                                <th>Order Name</th>
+                                <th>Class</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Populate this with data from your backend -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modals for Adding New Entries -->
+    <div class="modal fade" id="addClassModal" tabindex="-1" role="dialog" aria-labelledby="addClassModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="addClassModalLabel">Add New Class</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="addClassForm">
+                        <div class="form-group">
+                            <label for="className">Class Name</label>
+                            <input type="text" class="form-control" id="className" name="className" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Add Class</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Repeat similar modals for Family, Genus, and Conservation -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+    function fetchOptionData(url) {
+    fetch(url)
+        .then(res => res.json())
+        .then(data => {
+            let table = document.getElementById('class-table').getElementsByTagName('tbody')[0];
+
+            // Clear existing rows
+            table.innerHTML = "";
+
+            data.forEach((item) => {
+                let row = table.insertRow();
+
+                // Assuming item has properties class_id and class_common_name
+                let cell1 = row.insertCell(0);
+                let cell2 = row.insertCell(1);
+                let cell3 = row.insertCell(2);
+
+                cell1.textContent = item.class_common_name;
+                cell2.textContent = item.class_name;
+                cell3.innerHTML = `
+                            <button class="btn btn-sm btn-primary" onclick="editItem(${item.class_id})">
+                                <i class="bi bi-pencil-square"></i>
+                            </button>
+                            <button class="btn btn-sm btn-danger" onclick="deleteItem(${item.class_id})">
+                                <i class="bi bi-trash"></i>
+                            </button>
+                        `;
+            });
+        })
+        .catch(error => console.error('Error fetching data:', error));
+}
+
+function fetchOrders(url) {
+    fetch(url)
+        .then(res => res.json())
+        .then(data => {
+            let table = document.getElementById('order-table').getElementsByTagName('tbody')[0];
+
+            // Clear existing rows
+            table.innerHTML = "";
+
+            data.forEach((item) => {
+                let row = table.insertRow();
+
+                // Assuming item has properties class_id and class_common_name
+                let cell1 = row.insertCell(0);
+                let cell2 = row.insertCell(1);
+                let cell3 = row.insertCell(2);
+
+                cell1.textContent = item.order_name;
+                cell2.textContent = item.class_common_name;
+                cell3.innerHTML = `
+                            <button class="btn btn-sm btn-primary" onclick="editItem(${item.class_id})">
+                                <i class="bi bi-pencil-square"></i>
+                            </button>
+                            <button class="btn btn-sm btn-danger" onclick="deleteItem(${item.class_id})">
+                                <i class="bi bi-trash"></i>
+                            </button>
+                        `;
+            });
+        })
+        .catch(error => console.error('Error fetching data:', error));
+}
+
+fetchOptionData("api/get_classes.php");
+fetchOrders("api/get_orders.php?crud=true");
+    </script>
+    <script src="footer.js"></script>
+</body>
+</html>
