@@ -1,47 +1,42 @@
 <?php
-// Connect to your database (replace with your actual credentials)
-$host = 'localhost';
-$user = 'root';
-$pass = '';
-$dbname = 'catalogue';
+// api/orders/get
+require_once '../api/common/db.php';
+require_once '../api/common/functions.php';
 
-$conn = new mysqli($host, $user, $pass, $dbname);
-if ($conn->connect_error) {
-    die('Connection failed: ' . $conn->connect_error);
+$type = $_GET["type"] ?? 'default';
+$id = $_GET["id"] ?? null;
+$sort_by = $_GET["sort_by"] ?? 'genus_name';
+$order = $_GET["order"] ?? 'asc';
+
+function getFamilySql($family, $sort_by, $order){
+  return "SELECT DISTINCT genus.genus_id, genus.genus_name
+          FROM animals
+          INNER JOIN genus ON animals.genus_id = genus.genus_id
+          WHERE animals.family_id = '$family'
+          ORDER BY $sort_by $order;";
 }
 
-$family = $_GET["family_id"] ?? null;
-
-if ($family) {
-    $sql = "SELECT DISTINCT genus.genus_id, genus.genus_name
-    FROM animals
-    INNER JOIN genus ON animals.genus_id = genus.genus_id
-    WHERE animals.family_id = '$family'
-    ORDER BY genus.genus_name;"; 
-}
-else{
-    $sql = "SELECT genus.genus_id, genus.genus_name
-    FROM animals
-    INNER JOIN genus ON animals.genus_id = genus.genus_id
-    ORDER BY genus.genus_name;"; 
+function getCrudSql($sort_by, $order){
+  return "SELECT genus.genus_id, genus.genus_name, family.family_name
+          FROM genus
+          INNER JOIN family ON genus.family_id = family.family_id
+          ORDER BY $sort_by $order;";
 }
 
 
-$result = $conn->query($sql);
-
-$data = array();
-
-if ($result->num_rows > 0) {
-  // output data of each row
-  while($row = $result->fetch_assoc()) {
-    $data[] = $row;
-  }
-} else {
-  echo "0 results";
+switch ($type) {
+  case 'crud':
+      $sql = getCrudSql($sort_by, $order);
+      break;
+  case 'family':
+      $sql = getFamilySql($id, $sort_by, $order);
+      break;
+  default:
+      $sql = getDefaultSql($sort_by, $order);
+      break;
 }
 
-echo json_encode($data);
+$results = executeQuery($sql);
+jsonResponse($results);
 
-// Close the database connection
-$conn->close();
 ?>

@@ -8,38 +8,12 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" sizes="32x32" href="mr-photography.png">
     <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="crud.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
     <script src="navbar.js"></script>
 </head>
 <body>
-    <style>
-          .detail-table{
-    margin-bottom: 0 !important;
-  }
-  .detail-table > tbody > tr > td,
-  .detail-table > tbody > tr > th,
-  thead {
-    line-height: 2;
-    font-family: "Playfair Display", serif;
-    background-color: #343a40;
-    border-bottom-width: 1px;
-    color: white;
-  }
-  .table-title{
-    background: #435d7d;
-    color: #fff;
-    padding: 16px 30px;
-    min-width: 100%;
-    border-radius: 3px 3px 0 0;
-  }
-  .table-wrapper{
-    min-width: 1000px;
-    padding: 20px 25px;
-    border-radius: 3px;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
-  }
-    </style>
-    <div class="container mt-5">
+    <div class="container mt-2">
         <h2>Taxonomy Management</h2>
         <ul class="nav nav-tabs" id="taxonomyTabs" role="tablist">
             <li class="nav-item">
@@ -64,7 +38,7 @@
                                 <h3>Manage Classes</h3>
                             </div>
                             <div class="col-6 right">
-                                <button class="btn btn-dark" data-toggle="modal" data-target="#addClassModal">Add New Class</button>
+                                <button class="btn btn-dark btn-right" data-toggle="modal" data-target="#addClassModal">New Class</button>
                             </div>
                         </div>
                     </div>
@@ -77,40 +51,60 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <!-- Populate this with data from your backend -->
                         </tbody>
                     </table>
                 </div>
             </div>
             <div class="tab-pane fade" id="family" role="tabpanel">
-                <button class="btn btn-primary my-3" data-toggle="modal" data-target="#addFamilyModal">Add New Family</button>
-                <table class="table table-bordered">
-                    <thead>
-                        <tr>
-                            <th>ID</th>
-                            <th>Name</th>
-                            <th>Actions</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <!-- Populate this with data from your backend -->
-                    </tbody>
-                </table>
+                <div class="table-wrapper">
+                    <div class="table-title">
+                        <div class="row">
+                            <div class="col-6">
+                                <h3>Manage Families</h3>
+                            </div>
+                            <div class="col-6 right">
+                                <button class="btn btn-dark btn-right" data-toggle="modal" data-target="#addFamilyModal">New Family</button>
+                            </div>
+                        </div>
+                    </div>
+                    <table class="table table-bordered detail-table" id="family-table">
+                        <thead>
+                            <tr>
+                                <th>Family Name <button class="btn-right" id="sortFamilyByName"><i class="bi bi-sort-alpha-down"></i></button></th>
+                                <th>Common Members</th>
+                                <th>Order <button class="btn-right" id="sortFamilyByOrder"><i class="bi bi-sort-alpha-down"></i></button></th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
             </div>
             <div class="tab-pane fade" id="genus" role="tabpanel">
-                <button class="btn btn-primary my-3" data-toggle="modal" data-target="#addGenusModal">Add New Genus</button>
-                <table class="table table-bordered">
-                    <thead>
-                        <tr>
-                            <th>ID</th>
-                            <th>Name</th>
-                            <th>Actions</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <!-- Populate this with data from your backend -->
-                    </tbody>
-                </table>
+                <div class="table-wrapper">
+                    <div class="table-title">
+                        <div class="row">
+                            <div class="col-6">
+                                <h3>Manage Genera</h3>
+                            </div>
+                            <div class="col-6 right">
+                                <button class="btn btn-dark btn-right" data-toggle="modal" data-target="#addGenusModal">New Genus</button>
+                            </div>
+                        </div>
+                    </div>
+                    <table class="table table-bordered detail-table" id="genus-table">
+                        <thead>
+                            <tr>
+                                <th>Genus Name <button class="btn-right" id="sortGenusByName"><i class="bi bi-sort-alpha-down"></i></button></th>
+                                <th>Family <button class="btn-right" id="sortGenusByFamily"><i class="bi bi-sort-alpha-down"></i></button></th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
             </div>
             <div class="tab-pane fade" id="order" role="tabpanel">
                 <div class="table-wrapper">
@@ -120,28 +114,30 @@
                                 <h3>Manage Orders</h3>
                             </div>
                             <div class="col-6 right">
-                                <button class="btn btn-dark" data-toggle="modal" data-target="#addOrderModal">Add New Order</button>
+                                <button class="btn btn-dark btn-right" data-toggle="modal" data-target="#addOrderModal">New Order</button>
                             </div>
                         </div>
                     </div>
                     <table class="table table-bordered detail-table" id="order-table">
                         <thead>
                             <tr>
-                                <th>Order Name</th>
-                                <th>Class</th>
+                                <th>
+                                    <div class="header-container">
+                                        Order Name <button class="btn-right" id="sortOrdersByOrder"><i class="bi bi-sort-alpha-down"></i></button>
+                                    </div>
+                                </th>
+                                <th>Class <button class="btn-right" id="sortOrdersByClass"><i class="bi bi-sort-alpha-down"></i></button></th>
                                 <th>Actions</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <!-- Populate this with data from your backend -->
+
                         </tbody>
                     </table>
                 </div>
             </div>
         </div>
     </div>
-
-    <!-- Modals for Adding New Entries -->
     <div class="modal fade" id="addClassModal" tabindex="-1" role="dialog" aria-labelledby="addClassModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -152,26 +148,112 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form id="addClassForm">
-                        <div class="form-group">
-                            <label for="className">Class Name</label>
-                            <input type="text" class="form-control" id="className" name="className" required>
+                    <form>
+                        <div class="row">
+                            <div class="col">
+                                <label for="order-field">class name</label>
+                                <input type="text" class="form-control" id="add-class-text" aria-describedby="genusHelp" placeholder="Class Name" required>
+                            </div>
+                            <div class="col">
+                                <label for="order-field">class name</label>
+                                <input type="text" class="form-control" id="add-class-text" aria-describedby="genusHelp" placeholder="Class Name" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Add Class</button>
                         </div>
-                        <button type="submit" class="btn btn-primary">Add Class</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="addOrderModal" tabindex="-1" role="dialog" aria-labelledby="addOrderModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="addOrderModalLabel">Add New Order</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="row">
+                            <div class="col">
+                                <label for="order-field">class name</label>
+                                <input type="text" class="form-control" id="add-class-text" aria-describedby="genusHelp" placeholder="Class Name" required>
+                            </div>
+                            <div class="col">
+                                <label for="order-field">class name</label>
+                                <input type="text" class="form-control" id="add-class-text" aria-describedby="genusHelp" placeholder="Class Name" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Add Class</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="addFamilyModal" tabindex="-1" role="dialog" aria-labelledby="addFamilyModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="addFamilyModalLabel">Add New Class</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="row">
+                            <div class="col">
+                                <label for="order-field">class name</label>
+                                <input type="text" class="form-control" id="add-class-text" aria-describedby="genusHelp" placeholder="Class Name" required>
+                            </div>
+                            <div class="col">
+                                <label for="order-field">class name</label>
+                                <input type="text" class="form-control" id="add-class-text" aria-describedby="genusHelp" placeholder="Class Name" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Add Class</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="addGenusModal" tabindex="-1" role="dialog" aria-labelledby="addGenusModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="addGenusModalLabel">Add New Class</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="row">
+                            <div class="col">
+                                <label for="order-field">class name</label>
+                                <input type="text" class="form-control" id="add-class-text" aria-describedby="genusHelp" placeholder="Class Name" required>
+                            </div>
+                            <div class="col">
+                                <label for="order-field">class name</label>
+                                <input type="text" class="form-control" id="add-class-text" aria-describedby="genusHelp" placeholder="Class Name" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Add Class</button>
+                        </div>
                     </form>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Repeat similar modals for Family, Genus, and Conservation -->
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <script>
-    function fetchOptionData(url) {
+    function fetchClasses(url) {
     fetch(url)
         .then(res => res.json())
         .then(data => {
@@ -234,9 +316,123 @@ function fetchOrders(url) {
         })
         .catch(error => console.error('Error fetching data:', error));
 }
+function fetchFamilies(url) {
+    fetch(url)
+        .then(res => res.json())
+        .then(data => {
+            let table = document.getElementById('family-table').getElementsByTagName('tbody')[0];
 
-fetchOptionData("api/get_classes.php");
-fetchOrders("api/get_orders.php?crud=true");
+            // Clear existing rows
+            table.innerHTML = "";
+
+            data.forEach((item) => {
+                let row = table.insertRow();
+
+                // Assuming item has properties class_id and class_common_name
+                let cell1 = row.insertCell(0);
+                let cell2 = row.insertCell(1);
+                let cell3 = row.insertCell(2);
+                let cell4 = row.insertCell(3);
+
+                cell1.textContent = item.family_name;
+                cell2.textContent = item.common_name;
+                cell3.textContent = item.order_name
+                cell4.innerHTML = `
+                            <button class="btn btn-sm btn-primary" onclick="editItem(${item.class_id})">
+                                <i class="bi bi-pencil-square"></i>
+                            </button>
+                            <button class="btn btn-sm btn-danger" onclick="deleteItem(${item.class_id})">
+                                <i class="bi bi-trash"></i>
+                            </button>
+                        `;
+            });
+        })
+        .catch(error => console.error('Error fetching data:', error));
+}
+
+function fetchGenera(url) {
+    fetch(url)
+        .then(res => res.json())
+        .then(data => {
+            let table = document.getElementById('genus-table').getElementsByTagName('tbody')[0];
+
+            table.innerHTML = "";
+
+            data.forEach((item) => {
+                let row = table.insertRow();
+
+                let cell1 = row.insertCell(0);
+                let cell2 = row.insertCell(1);
+                let cell3 = row.insertCell(2);
+
+                cell1.textContent = item.genus_name;
+                cell2.textContent = item.family_name;
+                cell3.innerHTML = `
+                            <button class="btn btn-sm btn-primary" onclick="editItem(${item.class_id})">
+                                <i class="bi bi-pencil-square"></i>
+                            </button>
+                            <button class="btn btn-sm btn-danger" onclick="deleteItem(${item.class_id})">
+                                <i class="bi bi-trash"></i>
+                            </button>
+                        `;
+            });
+        })
+        .catch(error => console.error('Error fetching data:', error));
+}
+
+fetchClasses("api/get_classes.php");
+fetchOrders("api/get_orders.php?type=crud");
+fetchFamilies("api/get_families.php?type=crud");
+fetchGenera("api/get_genera.php?type=crud");
+
+
+document.getElementById('sortOrdersByOrder').addEventListener('click', function() {
+    fetchSortedData('order', 'order_name', this);
+});
+
+document.getElementById('sortOrdersByClass').addEventListener('click', function() {
+    fetchSortedData('order', 'class_common_name', this);
+});
+
+document.getElementById('sortFamilyByName').addEventListener('click', function() {
+    fetchSortedData('family', 'family_name', this);
+});
+
+document.getElementById('sortFamilyByOrder').addEventListener('click', function() {
+    fetchSortedData('family', 'order_name', this);
+});
+
+document.getElementById('sortGenusByName').addEventListener('click', function() {
+    fetchSortedData('genus', 'genus_name', this);
+});
+
+document.getElementById('sortGenusByFamily').addEventListener('click', function() {
+    fetchSortedData('genus', 'family_name', this);
+});
+
+
+function fetchSortedData(data, column, button) {
+    // Toggle icon direction
+    const icon = button.querySelector('i');
+    const isAscending = icon.classList.contains('bi-sort-alpha-down');
+    icon.classList.toggle('bi-sort-alpha-down', !isAscending);
+    icon.classList.toggle('bi-sort-alpha-down-alt', isAscending);
+
+    const order = isAscending ? 'desc' : 'asc';
+    switch(data){
+        case 'order':
+            fetchOrders(`api/get_orders.php?type=crud&sort_by=${column}&order=${order}`);
+            break;
+        case 'family':
+            fetchFamilies(`api/get_families.php?type=crud&sort_by=${column}&order=${order}`);
+            break;
+        case 'genus':
+            fetchGenera(`api/get_genera.php?type=crud&sort_by=${column}&order=${order}`);
+            break;
+    }
+
+}
+
     </script>
     <script src="footer.js"></script>
 </body>

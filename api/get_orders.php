@@ -1,60 +1,59 @@
 <?php
-// Connect to your database (replace with your actual credentials)
-$host = 'localhost';
-$user = 'root';
-$pass = '';
-$dbname = 'catalogue';
+// api/orders/get
+require_once '../api/common/db.php';
+require_once '../api/common/functions.php';
 
-$conn = new mysqli($host, $user, $pass, $dbname);
-if ($conn->connect_error) {
-    die('Connection failed: ' . $conn->connect_error);
+$type = $_GET["type"] ?? 'default';
+$id = $_GET["id"] ?? null;
+$sort_by = $_GET["sort_by"] ?? 'order_name';
+$order = $_GET["order"] ?? 'asc';
+
+function getCrudSql($sort_by, $order) {
+    return "SELECT a.order_id, a.order_name, c.class_common_name
+            FROM animal_order AS a
+            INNER JOIN class AS c ON a.class_id = c.class_id
+            ORDER BY $sort_by $order;";
 }
 
-$order = $_GET["order_id"] ?? null;
-$class = $_GET["class_id"] ?? null;
-$crud = $_GET["crud"] ?? null;
-
-if($crud){
-  $sql = "SELECT a.order_id, a.order_name, c.class_common_name
-  FROM animal_order AS a
-  INNER JOIN class AS c ON a.class_id = c.class_id
-  ORDER BY c.class_common_name, a.order_name;";
-}
-else if ($order) {
-    $sql = "SELECT DISTINCT animal_order.order_id, animal_order.order_name
-    FROM animals
-    INNER JOIN animal_order ON animals.order_id = animal_order.order_id
-    WHERE animals.order_id = '$order'
-    ORDER BY animal_order.order_name;"; 
-}
-else if($class){
-    $sql = "SELECT DISTINCT animal_order.order_id, animal_order.order_name
-    FROM animals
-    INNER JOIN animal_order ON animals.order_id = animal_order.order_id
-    WHERE animals.class_id = '$class'
-    ORDER BY animal_order.order_name;"; 
-}
-else{
-$sql = 'SELECT DISTINCT animal_order.order_id, animal_order.order_name
-FROM animals
-INNER JOIN animal_order ON animals.order_id = animal_order.order_id
-ORDER BY animal_order.order_name;';
-}
-$result = $conn->query($sql);
-
-$data = array();
-
-if ($result->num_rows > 0) {
-  // output data of each row
-  while($row = $result->fetch_assoc()) {
-    $data[] = $row;
-  }
-} else {
-  echo "0 results";
+function getOrderSql($order_id, $sort_by, $order) {
+    return "SELECT DISTINCT animal_order.order_id, animal_order.order_name
+            FROM animals
+            INNER JOIN animal_order ON animals.order_id = animal_order.order_id
+            WHERE animals.order_id = '$order_id'
+            ORDER BY $sort_by $order;";
 }
 
-echo json_encode($data);
+function getClassSql($class_id, $sort_by, $order) {
+    return "SELECT DISTINCT animal_order.order_id, animal_order.order_name
+            FROM animals
+            INNER JOIN animal_order ON animals.order_id = animal_order.order_id
+            WHERE animals.class_id = '$class_id'
+            ORDER BY $sort_by $order;";
+}
 
-// Close the database connection
-$conn->close();
+function getDefaultSql($sort_by, $order) {
+    return "SELECT DISTINCT animal_order.order_id, animal_order.order_name
+            FROM animals
+            INNER JOIN animal_order ON animals.order_id = animal_order.order_id
+            ORDER BY $sort_by $order;";
+}
+
+switch ($type) {
+    case 'crud':
+        $sql = getCrudSql($sort_by, $order);
+        break;
+    case 'order':
+        $sql = getOrderSql($id, $sort_by, $order);
+        break;
+    case 'class':
+        $sql = getClassSql($id, $sort_by, $order);
+        break;
+    default:
+        $sql = getDefaultSql($sort_by, $order);
+        break;
+}
+
+$results = executeQuery($sql);
+jsonResponse($results);
+
 ?>

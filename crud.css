@@ -1,0 +1,72 @@
+.detail-table{
+    margin-bottom: 0 !important;
+  }
+
+  .detail-table > tbody > tr > td,
+  .detail-table > tbody > tr > th,
+  thead {
+    line-height: 2;
+    font-family: "Playfair Display", serif;
+    background-color: #343a40;
+    border-bottom-width: 1px;
+    color: white;
+    font-size: medium;
+  }
+  .table-title{
+    background: #435d7d;
+    color: #fff;
+    padding: 16px 30px;
+    min-width: 100%;
+    border-radius: 3px 3px 0 0;
+    position: relative;
+  }
+  .table-wrapper{
+
+  }
+@media(max-width: 1140px) {
+    .detail-table > tbody > tr > td,
+    .detail-table > tbody > tr > th,
+    thead {
+        font-size: small;
+        padding: 0.25rem 0
+    }
+}
+  th {
+    position: relative;
+    width: min-content;
+}
+
+.btn-right {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Styles for smaller screens */
+@media (max-width: 600px) {
+    .btn-right {
+        position: absolute;
+        display: block;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .detail-table > tbody > tr > td,
+    .detail-table > tbody > tr > th,
+    thead {
+        padding: 2px 2px;
+        font-size: smaller;
+        word-break: break-word; /* Break long words */
+        overflow-wrap: break-word; /* Ensure words wrap */
+    }
+}
+.nav-link{
+    color: white;
+}
+.nav :hover{
+    color: white;
+}
+h2{
+    color: white;
+}

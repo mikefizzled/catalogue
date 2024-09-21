@@ -1,35 +1,17 @@
 <?php
-// Connect to your database (replace with your actual credentials)
-$host = 'localhost';
-$user = 'root';
-$pass = '';
-$dbname = 'catalogue';
+// api/orders/get
+require_once '../api/common/db.php';
+require_once '../api/common/functions.php';
 
-$conn = new mysqli($host, $user, $pass, $dbname);
-if ($conn->connect_error) {
-    die('Connection failed: ' . $conn->connect_error);
-}
 
-                                    
-$sql = 'SELECT DISTINCT class.class_id, class.class_common_name, class.class_name
+$order = $GET_['order'] ?? 'class.class_common_name';
+
+$sql = "SELECT DISTINCT class.class_id, class.class_common_name, class.class_name
 FROM animals
 INNER JOIN class ON animals.class_id = class.class_id
-ORDER BY class.class_common_name;';
-$result = $conn->query($sql);
+ORDER BY $order;";
 
-$data = array();
+$results = executeQuery($sql);
+jsonResponse($results);
 
-if ($result->num_rows > 0) {
-  // output data of each row
-  while($row = $result->fetch_assoc()) {
-    $data[] = $row;
-  }
-} else {
-  echo "0 results";
-}
-
-echo json_encode($data);
-
-// Close the database connection
-$conn->close();
 ?>
