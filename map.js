@@ -77,3 +77,20 @@ async function getAnimalsAtLocation (locationId) {
 }
 
 loadCoordinates();
+
+map.on('click', function(e) {
+    // e.latlng contains the coordinates of the clicked point
+    var lat = e.latlng.lat;
+    var lng = e.latlng.lng;
+    console.log("You clicked the map at latitude: " + lat + " and longitude: " + lng);
+});
+
+map.on('click', function(e) {
+    var lat = e.latlng.lat;
+    var lng = e.latlng.lng;
+    var popup = L.popup()
+    .setLatLng(e.latlng)
+    .setContent("Latitude: " + lat + "<br>Longitude: " + lng)
+    .openOn(map);
+    document.getElementById('lat').value = e.latlng.lat;
+});
