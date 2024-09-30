@@ -1,0 +1,39 @@
+  p, i {
+    font-size:large;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+  }
+ 
+  .detail-table{
+    margin-bottom: 0 !important;
+  }
+  .detail-table > tbody > tr > td,
+  .detail-table > tbody > tr > th {
+    line-height: 2;
+    font-family: "Playfair Display", serif;
+    background-color: #343a40;
+    border-bottom-width: 1px;
+    color: white;
+  }
+  .no-bottom-border {
+    border-bottom-width: 0px !important;
+}
+
+  .carousel-item img {
+    /*max-height: 75vh;  Ensures the image does not exceed the viewport height */
+  
+    object-fit: contain; /* Ensures the image covers the container while maintaining aspect ratio */
+  }
+  
+  /* Default max-width for large screens */
+  .card {
+    max-width: 85vw;
+  }
+  
+  /* Max-width for small screens */
+  @media (max-width: 768px) {
+    .card {
+      max-width: 95vw;
+    }
+  }
+  
