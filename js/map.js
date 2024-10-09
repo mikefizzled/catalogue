@@ -78,6 +78,7 @@ async function getAnimalsAtLocation (locationId) {
 
 loadCoordinates();
 
+// Quick co-ordinate popup - plan to be used when performing CRUD on locations
 map.on('click', function(e) {
     // e.latlng contains the coordinates of the clicked point
     var lat = e.latlng.lat;

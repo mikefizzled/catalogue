@@ -1,27 +1,41 @@
-.catalogue-filter{
-    padding: 1rem 2rem 1rem 2rem;
-    text-align: center;
-    color: white;
-    background-color: #343a40;
-    flex-wrap: wrap;
-    justify-content: center;
-    border: #495057;
-  }
+.catalogue-filter {
+  padding: 1rem 2rem 1rem 2rem;
+  text-align: center;
+  color: white;
+  background-color: #343a40;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: #495057;
+}
 
 .filter {
-    min-width: 10rem;
-    width: fit-content;
-    padding: 0.5rem;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
+  min-width: 10rem;
+  width: fit-content;
+  padding: 0.5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 
-  .gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:center;
-  }
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
-  .remove-link-deco{
-    text-decoration: none;
-  }
+.remove-link-deco {
+  text-decoration: none;
+}
+
+.catalogue-card {
+  margin: 0.5rem;
+  padding: 1rem 2rem 1rem 2rem;
+  text-align: center;
+  color: white;
+  background-color: #343a40;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: #495057;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 1rem;
+}
